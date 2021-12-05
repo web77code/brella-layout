@@ -1,4 +1,10 @@
 @import url(../vendor/normalize.css);
 
-@import "./modules/blocks/_header.scss"
+@import "./modules/fonts.scss";
 
+@import "./modules/blocks/_page.scss";
+@import "./modules/blocks/_header.scss";
+@import "./modules/blocks/_logo.scss";
+@import "./modules/blocks/_menu.scss";
+@import "./modules/blocks/_hero.scss";
+@import "./modules/blocks/_form.scss";

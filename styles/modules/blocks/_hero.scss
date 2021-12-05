@@ -1,0 +1,36 @@
+.hero {
+  position: relative;
+
+  &__image {
+    max-height: 720px;
+  }
+
+  &__container {
+    max-width: 516px;
+    position: absolute;
+    top: 161px;
+    left: 120px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.28;
+    color: #214E41;
+    margin-bottom: 40px;
+  }
+
+  &__subtitle {
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.5;
+    color: #214E41;
+    margin-bottom: 16px;
+  }
+}

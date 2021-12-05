@@ -1,0 +1,45 @@
+.form {
+  font-size: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  &__input {
+    width: 280px;
+    height: 60px;
+    border: none;
+    border-radius: 6px 0px 0px 6px;
+    box-sizing: border-box;
+    padding: 0 20px;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.43;
+
+    &::placeholder {
+      color: #222222;
+      opacity: 1;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__button {
+    width: 120px;
+    height: 60px;
+    border-radius: 0px 6px 6px 0px;
+    background-color: #43806C;
+    border: none;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.54;
+    color: #FFFFFF;
+    padding: 0;
+  }
+}
