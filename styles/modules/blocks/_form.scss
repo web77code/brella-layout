@@ -41,5 +41,11 @@
     line-height: 1.54;
     color: #FFFFFF;
     padding: 0;
+    transition: opacity 300ms ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      opacity: .9;
+    }
   }
 }
