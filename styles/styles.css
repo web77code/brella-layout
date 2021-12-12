@@ -15,6 +15,12 @@
   font-weight: 700;
   font-style: normal;
 }
+@font-face {
+  src: url(../vendor/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+}
 .page {
   width: 100%;
 }
@@ -242,6 +248,7 @@
   font-style: normal;
   line-height: 1.54;
   color: #43806C;
+  letter-spacing: 0.05px;
   text-transform: uppercase;
   padding: 0;
   margin: 0 0 20px;
@@ -294,4 +301,82 @@
   color: #757575;
   text-align: right;
   padding: 0 35px;
+}
+
+.two-sides {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.two-sides__column {
+  box-sizing: border-box;
+}
+.two-sides__column:first-of-type {
+  background-color: #E3EEED;
+  flex-grow: 1;
+  padding: 120px 120px 129px;
+}
+.two-sides__column:last-of-type {
+  background-color: #214E41;
+  flex-basis: 51%;
+  padding: 165px 115px 129px;
+}
+.two-sides__caption {
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.54;
+  color: #214E41;
+  letter-spacing: 0.05px;
+  text-transform: uppercase;
+  margin: 0 0 29px;
+}
+.two-sides__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.two-sides__item {
+  margin: 0 0 18px;
+}
+.two-sides__item:last-of-type {
+  margin-bottom: 0;
+}
+.two-sides__link {
+  position: relative;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.3;
+  color: #43806C;
+  text-decoration: none;
+  transition: text-shadow 200ms linear;
+}
+.two-sides__link:hover {
+  color: #214E41;
+  text-shadow: 0.6px 0 0 #214E41;
+}
+.two-sides__link:hover::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: -65px;
+  width: 30px;
+  height: 23px;
+  background-image: url(../images/arrow-right.svg);
+  background-size: 30px 23px;
+  background-repeat: no-repeat;
+}
+.two-sides__text {
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.7;
+  color: #FFFFFF;
+  letter-spacing: 0.02px;
 }/*# sourceMappingURL=styles.css.map */
