@@ -1,0 +1,56 @@
+.action {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  &__image {
+    flex-basis: 50%;
+    max-height: 577px;
+  }
+
+  &__prompt {
+    flex-basis: 50%;
+    background-color: #E3EEED;
+    box-sizing: border-box;
+    padding: 144px 177px 96px 120px;
+  }
+
+  &__question {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.28;
+    color: #214E41;
+    padding: 0;
+    margin: 0 0 46px;
+    max-width: 423px;
+  }
+
+  &__suggest {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.28;
+    color: #214E41;
+    padding: 0;
+    margin: 0 0 60px;
+    max-width: 423px;
+  }
+
+  &__button {
+    background-color: #43806C;
+    box-sizing: border-box;
+    padding: 13px 24px;
+    border-radius: 6px;
+    border: 1px solid #43806C;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.62;
+    letter-spacing: 0.02px;
+    color: #FFFFFF;
+  }
+}
