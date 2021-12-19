@@ -642,6 +642,9 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  font-size: 0;
+  max-height: 577px;
+  overflow: hidden;
 }
 .action__image {
   flex-basis: 50%;
@@ -688,4 +691,121 @@
   line-height: 1.62;
   letter-spacing: 0.02px;
   color: #FFFFFF;
+}
+
+.footer {
+  background-color: #214E41;
+  box-sizing: border-box;
+  padding: 100px 120px 50px;
+}
+.footer__information {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.footer__logo {
+  margin-right: 105px;
+}
+.footer__container:first-of-type {
+  margin-right: 115px;
+}
+.footer__menu-title {
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.85;
+  letter-spacing: 0.02px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin: 0 0 15px;
+}
+.footer__menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.footer__item:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+.footer__menu-link {
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.69;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.footer__subscription {
+  margin-left: auto;
+  max-width: 355px;
+}
+.footer__caption {
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.85;
+  color: #FFFFFF;
+  letter-spacing: 0.02px;
+  text-transform: uppercase;
+  margin: 0 0 19px;
+}
+.footer__text {
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.71;
+  color: #FFFFFF;
+  letter-spacing: 0.02px;
+  margin: 0 0 17px;
+}
+.footer__form {
+  margin: 0 0 30px;
+  display: flex;
+}
+.footer__email {
+  width: 300px;
+  padding: 18px 21px 6px;
+  box-sizing: border-box;
+  background-color: #214E41;
+  border: 1px solid #FFFFFF;
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.71;
+  color: #FFFFFF;
+  letter-spacing: 0.02px;
+}
+.footer__email::-moz-placeholder {
+  color: #FFFFFF;
+  opacity: 1;
+}
+.footer__email:-ms-input-placeholder {
+  color: #FFFFFF;
+  opacity: 1;
+}
+.footer__email::placeholder {
+  color: #FFFFFF;
+  opacity: 1;
+}
+.footer__email:focus {
+  outline: none;
+}
+.footer__button {
+  width: 53px;
+  height: 50px;
+  padding: 0;
+  border: none;
+  background-image: url(../images/arrow-right.svg);
+  background-size: 23px 16px;
+  background-repeat: no-repeat;
+  background-position: center center;
 }/*# sourceMappingURL=styles.css.map */

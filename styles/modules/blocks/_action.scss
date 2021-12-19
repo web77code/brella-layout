@@ -2,6 +2,9 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  font-size: 0;
+  max-height: 577px;
+  overflow: hidden;
 
   &__image {
     flex-basis: 50%;

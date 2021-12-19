@@ -1,0 +1,130 @@
+.footer {
+  background-color: #214E41;
+  box-sizing: border-box;
+  padding: 100px 120px 50px;
+
+  &__information {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &__logo {
+    margin-right: 105px;
+  }
+
+  &__container {
+
+    &:first-of-type {
+      margin-right: 115px;
+    }
+  }
+
+  &__menu-title {
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.85;
+    letter-spacing: 0.02px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin: 0 0 15px;
+  }
+  &__menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  &__item {
+
+    &:not(:last-of-type) {
+      margin-bottom: 15px;
+    }
+  }
+  &__menu-link {
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.69;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+
+  &__subscription {
+    margin-left: auto;
+    max-width: 355px;
+  }
+
+  &__caption {
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.85;
+    color: #FFFFFF;
+    letter-spacing: 0.02px;
+    text-transform: uppercase;
+    margin: 0 0 19px;
+  }
+
+  &__text {
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.71;
+    color: #FFFFFF;
+    letter-spacing: 0.02px;
+    margin: 0 0 17px;
+  }
+
+  &__form {
+    margin: 0 0 30px;
+    display: flex;
+  }
+
+  &__email {
+    width: 300px;
+    padding: 18px 21px 6px;
+    box-sizing: border-box;
+    background-color: #214E41;
+    border: 1px solid #FFFFFF;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.71;
+    color: #FFFFFF;
+    letter-spacing: 0.02px;
+
+    &::placeholder {
+      color: #FFFFFF;
+      opacity: 1;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__button {
+    width: 53px;
+    height: 50px;
+    padding: 0;
+    border: none;
+    background-image: url(../images/arrow-right.svg);
+    background-size: 23px 16px;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  &__policy {}
+  &__oficials {}
+  &__copyright {}
+  &__link {}
+}
