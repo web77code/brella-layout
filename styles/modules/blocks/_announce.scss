@@ -1,0 +1,9 @@
+.announce {
+  position: relative;
+
+  &__container {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

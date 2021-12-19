@@ -1,0 +1,19 @@
+.coverage {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  &__column {
+    width: 50%;
+
+
+    &:first-of-type {
+      text-align: center;
+      font-size: 0;
+    }
+  }
+
+  &__image {
+    max-width: 296px;
+  }
+}
