@@ -808,4 +808,38 @@
   background-size: 23px 16px;
   background-repeat: no-repeat;
   background-position: center center;
+}
+.socials__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.socials__item:not(:last-of-type) {
+  margin-right: 25px;
+}
+.socials__link {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+}
+.socials__link_res_instagram {
+  background-image: url("../images/icon-instagram.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 26px 26px;
+}
+.socials__link_res_twitter {
+  background-image: url("../images/icon-twitter.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 26px 26px;
+}
+.socials__link_res_youtube {
+  background-image: url("../images/icon-youtube.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 26px 26px;
 }/*# sourceMappingURL=styles.css.map */
