@@ -9,7 +9,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    padding: 48px 50px 52px;
+    padding: 52px 50px 48px;
     margin: 0;
     box-sizing: border-box;
     list-style: none;
@@ -33,6 +33,9 @@
   &__image {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+    justify-self: end;
+    padding-right: 10px;
+    
   }
 
   &__title {
