@@ -65,6 +65,7 @@
 }
 .menu__item {
   margin-right: 50px;
+  position: relative;
 }
 .menu__item:last-of-type {
   margin-right: 0;
@@ -81,6 +82,18 @@
 .menu__link:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+.menu__link_has-subsection::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: -18px;
+  width: 12px;
+  height: 8px;
+  background-image: url("../images/menu-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 12px 8px;
+  background-position: center center;
 }
 
 .hero {
