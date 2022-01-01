@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <title>Brella</title>
 </head>
 <body>
@@ -165,59 +166,56 @@
         <h2 class="clients__title">
           Proudly backed by
         </h2>
-        <ul class="clients__list">
-          <li class="clients__item">
-            <a href="#" class="client__link">
-              <img src="./images/client1.png" alt="" class="client__logo">
-            </a>
-          </li>
-          <li class="clients__item">
-            <a href="#" class="client__link">
-              <img src="./images/client2.png" alt="" class="client__logo">
-            </a>
-          </li>
-          <li class="clients__item">
-            <a href="#" class="client__link">
-              <img src="./images/client3.png" alt="" class="client__logo">
-            </a>
-          </li>
-          <li class="clients__item">
-            <a href="#" class="client__link">
-              <img src="./images/client4.png" alt="" class="client__logo">
-            </a>
-          </li>
-          <li class="clients__item">
-            <a href="#" class="client__link">
-              <img src="./images/client5.png" alt="" class="client__logo">
-            </a>
-          </li>
-          <li class="clients__item">
-            <a href="#" class="client__link">
-              <img src="./images/client1.png" alt="" class="client__logo">
-            </a>
-          </li>
-          <li class="clients__item">
-            <a href="#" class="client__link">
-              <img src="./images/client2.png" alt="" class="client__logo">
-            </a>
-          </li>
-          <li class="clients__item">
-            <a href="#" class="client__link">
-              <img src="./images/client3.png" alt="" class="client__logo">
-            </a>
-          </li>
-          <li class="clients__item">
-            <a href="#" class="client__link">
-              <img src="./images/client4.png" alt="" class="client__logo">
-            </a>
-          </li>
-          <li class="clients__item">
-            <a href="#" class="client__link">
-              <img src="./images/client5.png" alt="" class="client__logo">
-            </a>
-          </li>
-        </ul>
+
+        <div class="swiper mySwiper">
+          <ul class="clients__list swiper-wrapper">
+            <li class="clients__item swiper-slide">
+              <a href="#" class="clients__link">
+                <img src="./images/client1.png" alt="" class="clients__logo">
+              </a>
+            </li>
+            <li class="clients__item swiper-slide">
+              <a href="#" class="clients__link">
+                <img src="./images/client2.png" alt="" class="clients__logo">
+              </a>
+            </li>
+            <li class="clients__item swiper-slide">
+              <a href="#" class="clients__link">
+                <img src="./images/client3.png" alt="" class="clients__logo">
+              </a>
+            </li>
+            <li class="clients__item swiper-slide">
+              <a href="#" class="clients__link">
+                <img src="./images/client4.png" alt="" class="clients__logo">
+              </a>
+            </li>
+            <li class="clients__item swiper-slide">
+              <a href="#" class="clients__link">
+                <img src="./images/client5.png" alt="" class="clients__logo">
+              </a>
+            </li>
+            <li class="clients__item swiper-slide">
+              <a href="#" class="clients__link">
+                <img src="./images/client1.png" alt="" class="clients__logo">
+              </a>
+            </li>
+            <li class="clients__item swiper-slide">
+              <a href="#" class="clients__link">
+                <img src="./images/client2.png" alt="" class="clients__logo">
+              </a>
+            </li>
+            <li class="clients__item swiper-slide">
+              <a href="#" class="clients__link">
+                <img src="./images/client3.png" alt="" class="clients__logo">
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="clients__button-next"></div>
+        <div class="clients__button-prev"></div>
       </section>
+
       <section class="articles page__section page__section_size_l">
         <ul class="articles__list">
           <li class="articles__item">
@@ -243,6 +241,7 @@
           </li>
         </ul>
       </section>
+
       <section class="action page__section page__section_size_xl">
         <img src="./images/action-pic.jpg" alt="" class="action__image">
         <div class="action__prompt">
@@ -304,6 +303,9 @@
     </footer>
   </div>
 
-  <script src="./scripts/scripts.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./scripts/index.js"></script>
+
 </body>
 </html>

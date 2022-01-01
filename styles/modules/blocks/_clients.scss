@@ -2,6 +2,7 @@
   padding-top: 120px;
   padding-bottom: 125px;
   box-sizing: border-box;
+  position: relative;
 
   &__title {
     margin: 0 0 115px;
@@ -16,23 +17,52 @@
   }
 
   &__list {
-    list-style: none;
-    padding: 0;
     margin: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
   }
 
-  &__item {
-    margin-right: 80px;
+  &__link {
+    max-height: 60px;
   }
 
   &__logo {
     width: 146px;
     height: 60px;
-    object-fit: cover;
+    object-fit: contain;
     overflow: hidden;
+  }
+
+  &__button-next {
+    position: absolute;
+    top: 302px;
+    right: 123px;
+    width: 23px;
+    height: 16px;
+    background-image: url(../images/arrow-right.svg);
+    background-size: 23px 16px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 10;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__button-prev {
+    position: absolute;
+    top: 302px;
+    left: 123px;
+    width: 23px;
+    height: 16px;
+    background-image: url(../images/arrow-right.svg);
+    background-size: 23px 16px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 10;
+    transform: rotate(180deg);
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
