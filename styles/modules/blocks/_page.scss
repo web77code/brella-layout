@@ -16,11 +16,21 @@
     &_size_l {
       padding-left: 45px;
       padding-right: 45px;
+
+      @media (max-width: #{$mobile}) {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
     }
 
     &_size_m {
       padding-left: 120px;
       padding-right: 120px;
+
+      @media (max-width: #{$mobile}) {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
     }
 
     &_size_s {

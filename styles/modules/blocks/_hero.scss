@@ -3,6 +3,11 @@
 
   &__image {
     max-height: 720px;
+
+    @media (max-width: #{$mobile}) {
+      max-height: 360px;
+      // object-fit: cover;
+    }
   }
 
   &__container {
@@ -12,6 +17,12 @@
     left: 120px;
     display: flex;
     flex-direction: column;
+
+    @media (max-width: #{$mobile}) {
+      max-width: calc(100% - 30px);
+      top: 30px;
+      left: 15px;
+    }
   }
 
   &__title {
@@ -22,6 +33,11 @@
     line-height: 1.28;
     color: #214E41;
     margin-bottom: 40px;
+
+    @media (max-width: #{$mobile}) {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
   }
 
   &__subtitle {

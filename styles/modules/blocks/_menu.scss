@@ -5,11 +5,19 @@
   margin: 0;
   padding: 0;
 
+  @media (max-width: #{$mobile}) {
+    flex-direction: column;
+  }
+
   &__item {
     margin-right: 50px;
     position: relative;
 
     &:last-of-type {
+      margin-right: 0;
+    }
+
+    @media (max-width: #{$mobile}) {
       margin-right: 0;
     }
   }
@@ -41,6 +49,10 @@
         background-repeat: no-repeat;
         background-size: 12px 8px;
         background-position: center center;
+
+        @media (max-width: #{$mobile}) {
+          right: 0;
+        }
       }
     }
   }

@@ -1,6 +1,7 @@
 @import url(../vendor/normalize.css);
 
-@import "./modules/fonts.scss";
+@import "./modules/_fonts.scss";
+@import "./modules/_variables.scss";
 
 @import "./modules/blocks/_page.scss";
 @import "./modules/blocks/_header.scss";
