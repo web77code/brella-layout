@@ -392,6 +392,7 @@
 }
 @media (max-width: 442px) {
   .advantages__item {
+    grid-template-columns: 68px auto;
     margin-right: 0;
     margin-bottom: 40px;
   }
@@ -405,6 +406,11 @@
   justify-self: end;
   padding-right: 10px;
 }
+@media (max-width: 442px) {
+  .advantages__image {
+    padding-right: 20px;
+  }
+}
 .advantages__title {
   grid-column: 2/3;
   grid-row: 1/2;
@@ -416,6 +422,11 @@
   font-style: normal;
   line-height: 1.5;
   color: #214E41;
+}
+@media (max-width: 442px) {
+  .advantages__title {
+    margin-bottom: 10px;
+  }
 }
 .advantages__description {
   grid-column: 2/3;
