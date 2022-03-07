@@ -1,23 +1,33 @@
 .two-sides {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-flow: row nowrap;
   justify-content: space-between;
+
+  @media (max-width: #{$mobile}) {
+    flex-direction: column;
+  }
 
   &__column {
     box-sizing: border-box;
-
 
     &:first-of-type {
       background-color: #E3EEED;
       flex-grow: 1;
       padding: 120px 120px 129px;
+
+      @media (max-width: #{$mobile}) {
+        padding: 40px 16px;
+      }
     }
 
     &:last-of-type {
       background-color: #214E41;
       flex-basis: 51%;
       padding: 165px 115px 129px;
+
+      @media (max-width: #{$mobile}) {
+        padding: 40px 16px;
+      }
     }
   }
 

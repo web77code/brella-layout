@@ -525,9 +525,13 @@
 
 .two-sides {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-flow: row nowrap;
   justify-content: space-between;
+}
+@media (max-width: 442px) {
+  .two-sides {
+    flex-direction: column;
+  }
 }
 .two-sides__column {
   box-sizing: border-box;
@@ -537,10 +541,20 @@
   flex-grow: 1;
   padding: 120px 120px 129px;
 }
+@media (max-width: 442px) {
+  .two-sides__column:first-of-type {
+    padding: 40px 16px;
+  }
+}
 .two-sides__column:last-of-type {
   background-color: #214E41;
   flex-basis: 51%;
   padding: 165px 115px 129px;
+}
+@media (max-width: 442px) {
+  .two-sides__column:last-of-type {
+    padding: 40px 16px;
+  }
 }
 .two-sides__caption {
   font-family: "Raleway", Arial, sans-serif;
@@ -610,8 +624,20 @@
   padding-bottom: 120px;
   box-sizing: border-box;
 }
+@media (max-width: 442px) {
+  .information {
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
 .information__column {
   width: 50%;
+}
+@media (max-width: 442px) {
+  .information__column {
+    width: 100%;
+  }
 }
 .information__caption {
   font-family: "Raleway", Arial, sans-serif;
@@ -647,9 +673,20 @@
   margin: 0;
   max-width: 556px;
 }
+@media (max-width: 442px) {
+  .information__text {
+    margin-bottom: 40px;
+  }
+}
 .information__image {
   max-width: 560px;
   margin-left: 20px;
+}
+@media (max-width: 442px) {
+  .information__image {
+    max-width: 100%;
+    margin-left: 0;
+  }
 }
 
 .numbers__list {
@@ -661,11 +698,23 @@
   flex-wrap: nowrap;
   justify-content: space-between;
 }
+@media (max-width: 442px) {
+  .numbers__list {
+    flex-wrap: wrap;
+  }
+}
 .numbers__item {
   margin-right: 50px;
 }
 .numbers__item:last-of-type {
   margin-right: 0;
+}
+@media (max-width: 442px) {
+  .numbers__item {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: calc(50% - 16px);
+  }
 }
 .numbers__title {
   font-family: "Roboto", Arial, sans-serif;
@@ -906,8 +955,23 @@
   flex-wrap: nowrap;
   justify-content: space-between;
 }
+@media (max-width: 442px) {
+  .articles__list {
+    flex-direction: column;
+    padding: 40px 0 40px;
+  }
+}
 .articles__item {
   max-width: 355px;
+}
+@media (max-width: 442px) {
+  .articles__item {
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  .articles__item:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .article {

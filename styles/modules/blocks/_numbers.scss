@@ -8,6 +8,10 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+
+    @media (max-width: #{$mobile}) {
+      flex-wrap: wrap;
+    }
   }
 
   &__item {
@@ -15,6 +19,12 @@
 
     &:last-of-type {
       margin-right: 0;
+    }
+
+    @media (max-width: #{$mobile}) {
+      margin-right: 0;
+      margin-bottom: 20px;
+      width: calc(50% - 16px)
     }
   }
 
