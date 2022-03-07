@@ -3,11 +3,9 @@
   flex-direction: row;
   flex-wrap: nowrap;
   box-sizing: border-box;
-  padding-top: 117px;
+  padding-top: 120px;
 
   &__column {
-    // flex-basis: 50%;
-
 
     &:first-of-type {
       text-align: center;

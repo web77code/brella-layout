@@ -1,3 +1,5 @@
+const nestedMenuItems = Array.from(document.querySelectorAll('.menu__link_has-subsection'));
+
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 5,
   spaceBetween: 80,
@@ -10,3 +12,12 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+const showSubmenu = e => {
+  // console.log(e);
+  // console.log(e.target);
+  // console.log(e.relatedTarget);
+}
+
+nestedMenuItems.forEach((menuItem) => {
+  menuItem.addEventListener('mouseover',showSubmenu);
+})

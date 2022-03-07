@@ -1,25 +1,17 @@
 .articles {
-  // padding-top: 120px;
-  // padding-bottom: 120px;
-  // box-sizing: border-box;
-
 
   &__list {
     list-style: none;
-    padding: 120px 74px 120px 131px;
+    padding: 30px 75px 120px;
     box-sizing: border-box;
     margin: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    border-top: 1px solid rgba(199, 199, 199, 0.37);
+    justify-content: space-between;
   }
 
   &__item {
     max-width: 355px;
-
-    &:not(:last-of-type) {
-      margin-right: 40px;
-    }
   }
 }

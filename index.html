@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/styles.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <title>Brella</title>
+  <title>Cutting Tree Service</title>
 </head>
 <body>
   <div class="page">
@@ -19,13 +19,26 @@
       </div>
 
       <div class="menu">
-
         <img class="menu__logo" src="./images/logo.svg" alt="Brella company">
         <ul class="menu__list">
           <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-          <li class="menu__item"><a class="menu__link menu__link_has-subsection" href="#">Services</a></li>
+          <li class="menu__item">
+            <a class="menu__link menu__link_has-subsection" href="#">Services</a>
+            <ul class="menu__sublist">
+              <li class="menu__sublist-item"><a class="menu__link" href="#">Link 1</a></li>
+              <li class="menu__sublist-item"><a class="menu__link" href="#">Link 2</a></li>
+              <li class="menu__sublist-item"><a class="menu__link" href="#">Link 3</a></li>
+            </ul>
+          </li>
           <li class="menu__item"><a class="menu__link" href="#">Costs</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Areas</a></li>
+          <li class="menu__item">
+            <a class="menu__link menu__link_has-subsection" href="#">Areas</a>
+            <ul class="menu__sublist">
+              <li class="menu__sublist-item"><a class="menu__link" href="#">Link 1</a></li>
+              <li class="menu__sublist-item"><a class="menu__link" href="#">Link 2</a></li>
+              <li class="menu__sublist-item"><a class="menu__link" href="#">Link 3</a></li>
+            </ul>
+          </li>
           <li class="menu__item"><a class="menu__link" href="#">Law</a></li>
           <li class="menu__item"><a class="menu__link" href="#">FAQs</a></li>
           <li class="menu__item"><a class="menu__link" href="#">Learning center</a></li>
@@ -35,15 +48,15 @@
       <div class="header__overlay"></div>
     </header>
 
-    <main>
+    <main class="main">
       <section class="hero page__section page__section_size_xl">
         <img class="hero__image" src="./images/hero.jpg" alt="">
         <div class="hero__container">
-          <div class="hero__title">Give your team peace of mind with supplemental health insurance from Brella.</div>
-          <div class="hero__subtitle">I'm wondering...</div>
+          <div class="hero__title">Book a Free Estimate!</div>
+          <div class="hero__subtitle">compare Tree Removal Estimates...</div>
           <form action="" class="form hero__search-form">
-            <input class="form__input" type="text" name="query" placeholder="how Brella's plan works">
-            <button class="form__button" type="button" aria-label="">Find out</button>
+            <input class="form__input" type="text" name="query" placeholder="Enter your Zip code here">
+            <button class="form__button" type="button" aria-label="">Get a quote</button>
           </form>
         </div>
       </section>
@@ -65,26 +78,50 @@
             <h2 class="advantages__title">Faster benefits</h2>
             <p class="advantages__description">Brella pays claims in hours–not weeks so your people can rest easy.</p>
           </li>
+          <li class="advantages__item">
+            <img class="advantages__image" src="./images/adv1.png" alt="">
+            <h2 class="advantages__title">More coverage</h2>
+            <p class="advantages__description">Brella covers 13,000+ injuries and illnesses from concussions to cancer.</p>
+          </li>
+          <li class="advantages__item">
+            <img class="advantages__image" src="./images/adv2.png" alt="">
+            <h2 class="advantages__title">Less hassle</h2>
+            <p class="advantages__description">One easy-to-manage plan with paperless install and online admin tools.</p>
+          </li>
+          <li class="advantages__item">
+            <img class="advantages__image" src="./images/adv3.png" alt="">
+            <h2 class="advantages__title">Faster benefits</h2>
+            <p class="advantages__description">Brella pays claims in hours–not weeks so your people can rest easy.</p>
+          </li>
         </ul>
       </section>
-      <section class="welcome page__section page__section_size_s">
-        <div class="welcome__column">
-          <p class="welcome__caption">
-            Why Brella?
-          </p>
-          <h2 class="welcome__title">
-            Today, any health insurance deductible can feel like a high deductible.
-          </h2>
-          <p class="welcome__text">
-            Brella's supplemental health plan enhances your health benefit strategy to ensure that health hardships don't become financial burdens.
-          </p>
-          <a class="welcome__link" href="#">See our plan</a>
-        </div>
-        <div class="welcome__column">
-          <img class="welcome__image" src="./images/welcome-image.png" alt="">
-          <figcaption class="welcome__figcaption">2020 individual averages (Source: KFF)</figcaption>
-        </div>
+
+      <section class="articles page__section page__section_size_l">
+        <ul class="articles__list">
+          <li class="articles__item">
+            <article class="article">
+              <img src="./images/article1-podcast.jpg" alt="" class="article__image">
+              <h3 class="article__type">Podcast</h3>
+              <a href="#" class="article__link">Better Voluntary Benefits with NFP Voluntary Benefits Practice Leader, Kim Heald</a>
+            </article>
+          </li>
+          <li class="articles__item">
+            <article class="article">
+              <img src="./images/article2-insurance.jpg" alt="" class="article__image">
+              <h3 class="article__type">Insurance Innovation</h3>
+              <a href="#" class="article__link">How to Design Simpler Insurance Benefits</a>
+            </article>
+          </li>
+          <li class="articles__item">
+            <article class="article">
+              <img src="./images/article3-srategy.jpg" alt="" class="article__image">
+              <h3 class="article__type">Benefits Strategy</h3>
+              <a href="#" class="article__link">Executive Benefits Outlook with Dan Aceti</a>
+            </article>
+          </li>
+        </ul>
       </section>
+
       <section class="two-sides page__section page__section_size_xl">
         <div class="two-sides__column">
           <p class="two-sides__caption">brella brings</p>
@@ -103,6 +140,7 @@
           <p class="two-sides__text">Employers can fund part or all of the premiums—or offer Brella as a voluntary benefit. The choice is up to you.</p>
         </div>
       </section>
+
       <section class="information page__section page__section_size_m">
         <div class="information__column">
           <p class="information__caption">
@@ -119,6 +157,7 @@
           <img class="information__image" src="./images/information-image1.jpg" alt="">
         </div>
       </section>
+
       <section class="numbers page__section page__section_size_m">
         <ul class="numbers__list">
           <li class="numbers__item">
@@ -139,6 +178,7 @@
           </li>
         </ul>
       </section>
+
       <section class="coverage page__section page__section_size_m">
         <div class="coverage__column">
           <img class="coverage__image" src="./images/information-image2.jpg" alt="">
@@ -156,6 +196,7 @@
           <a href="#" class="coverage__link">Play Video</a>
         </div>
       </section>
+
       <section class="announce page__section page__section_size_xl">
         <img src="./images/announce-bg.jpg" alt="" class="announce__background">
         <div class="announce__container">
@@ -171,11 +212,11 @@
           <a href="#" class="announce__link">Learn more</a>
         </div>
       </section>
+
       <section class="clients page__section page__section_size_m">
         <h2 class="clients__title">
           Proudly backed by
         </h2>
-
         <div class="swiper mySwiper">
           <ul class="clients__list swiper-wrapper">
             <li class="clients__item swiper-slide">
@@ -220,35 +261,8 @@
             </li>
           </ul>
         </div>
-
         <div class="clients__button-next"></div>
         <div class="clients__button-prev"></div>
-      </section>
-
-      <section class="articles page__section page__section_size_l">
-        <ul class="articles__list">
-          <li class="articles__item">
-            <article class="article">
-              <img src="./images/article1-podcast.jpg" alt="" class="article__image">
-              <h3 class="article__type">Podcast</h3>
-              <a href="#" class="article__link">Better Voluntary Benefits with NFP Voluntary Benefits Practice Leader, Kim Heald</a>
-            </article>
-          </li>
-          <li class="articles__item">
-            <article class="article">
-              <img src="./images/article2-insurance.jpg" alt="" class="article__image">
-              <h3 class="article__type">Insurance Innovation</h3>
-              <a href="#" class="article__link">How to Design Simpler Insurance Benefits</a>
-            </article>
-          </li>
-          <li class="articles__item">
-            <article class="article">
-              <img src="./images/article3-srategy.jpg" alt="" class="article__image">
-              <h3 class="article__type">Benefits Strategy</h3>
-              <a href="#" class="article__link">Executive Benefits Outlook with Dan Aceti</a>
-            </article>
-          </li>
-        </ul>
       </section>
 
       <section class="action page__section page__section_size_xl">
@@ -307,7 +321,6 @@
           <a href="#" class="footer__link">Privacy</a>
           <a href="#" class="footer__link">Terms of Service</a>
         </div>
-
       </div>
     </footer>
   </div>

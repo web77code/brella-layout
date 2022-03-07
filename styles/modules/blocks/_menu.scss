@@ -14,6 +14,7 @@
     z-index: 11;
     overflow-y: auto;
     overflow-x: hidden;
+    display: none;
   }
 
   &__logo {
@@ -97,5 +98,25 @@
         }
       }
     }
+  }
+
+  &__sublist {
+    width: 100%;
+    min-width: 60px;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    border: 1px solid red;
+    z-index: 3;
+    background-color: #fff;
+  }
+
+  &__sublist-item {
+    margin-bottom: 5px;
   }
 }

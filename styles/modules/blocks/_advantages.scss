@@ -1,15 +1,13 @@
 .advantages {
 
-
   &__list {
     position: relative;
-    top: -92px;
+    top: -90px;
     left: 0;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-flow: row wrap;
     justify-content: space-between;
-    padding: 52px 50px 48px;
+    padding: 52px 40px 12px;
     margin: 0;
     box-sizing: border-box;
     list-style: none;
@@ -26,12 +24,14 @@
   }
 
   &__item {
+    flex-basis: calc(33% - 45px);
     display: grid;
     grid-template-columns: 58px auto;
     grid-template-rows: repeat(2, auto);
     margin-right: 45px;
+    margin-bottom: 40px;
 
-    &:last-of-type {
+    &:nth-of-type(3n) {
       margin-right: 0;
     }
 
@@ -50,7 +50,6 @@
     grid-row: 1 / 3;
     justify-self: end;
     padding-right: 10px;
-
   }
 
   &__title {
