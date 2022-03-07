@@ -17,9 +17,11 @@
     background-color: #FFFFFF;
 
     @media (max-width: #{$mobile}) {
-      top: -40px;
+      position: static;
+      top: 0;
+      margin-top: 40px;
       flex-direction: column;
-      padding: 30px 25px 30px;
+      padding: 40px 20px;
     }
   }
 

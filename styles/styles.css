@@ -41,8 +41,8 @@
 }
 @media (max-width: 442px) {
   .page__section_size_l {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 .page__section_size_m {
@@ -51,8 +51,8 @@
 }
 @media (max-width: 442px) {
   .page__section_size_m {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 .page__section_size_s {
@@ -372,9 +372,11 @@
 }
 @media (max-width: 442px) {
   .advantages__list {
-    top: -40px;
+    position: static;
+    top: 0;
+    margin-top: 40px;
     flex-direction: column;
-    padding: 30px 25px 30px;
+    padding: 40px 20px;
   }
 }
 .advantages__item {
