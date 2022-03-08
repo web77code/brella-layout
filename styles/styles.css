@@ -307,9 +307,11 @@
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
+  width: 100%;
 }
 .form__input {
-  max-width: 280px;
+  width: calc(100% - 140px);
+  max-width: 380px;
   min-width: 210px;
   height: 60px;
   border: none;
