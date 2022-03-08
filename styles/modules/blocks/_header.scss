@@ -44,8 +44,8 @@
     background-color: rgba(0,0,0,.8);
     z-index: 10;
 
-    @media (max-width: #{$mobile}) {
-      // display: block;
+    &_visible_true {
+      display: block;
     }
   }
 }
