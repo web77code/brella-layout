@@ -1,15 +1,14 @@
 .menu {
-  position: absolute;
-  top: 33px;
-  right: 45px;
 
-  @media (max-width: #{$mobile}) {
+  @media (max-width: #{$tabletV}) {
     position: fixed;
     top: 0;
-    left: 0;
-    height: 100%;
-    width: 0;
-    max-width: 75vw;
+    left: -100%;
+    height: 100vh;
+    width: 100%;
+    visibility: hidden;
+    max-width: 324px;
+    min-width: 274px;
     overflow-y: auto;
     overflow-x: hidden;
     background-color: #ffffff;
@@ -17,17 +16,25 @@
     transition: all .3s ease-in-out;
   }
 
-  &_visible_true {
-    width: 100%;
+  @media (max-width: #{$mobileL}) {
+    max-width: 75vw;
+  }
+
+  &__logo-link {
+    display: none;
+
+    @media (max-width: #{$tabletV}) {
+      display: block;
+    }
   }
 
   &__logo {
-    display: none;
+    padding: 25px 15px 25px;
+    max-width: 160px;
 
-    @media (max-width: #{$mobile}) {
-      display: block;
-      padding: 16px 15px 18px 16px;
-      box-sizing: border-box;
+    @media (max-width: #{$mobileL}) {
+      padding-top: 9px;
+      padding-bottom: 10px;
     }
   }
 
@@ -38,21 +45,30 @@
     padding: 0;
     list-style: none;
 
-    @media (max-width: #{$mobile}) {
+    @media (max-width: #{$tabletV}) {
       flex-direction: column;
+      position: relative;
     }
   }
 
   &__item {
     position: relative;
     margin-right: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
     box-sizing: border-box;
 
     &:last-of-type {
       margin-right: 0;
     }
 
-    @media (max-width: #{$mobile}) {
+    @media (max-width: #{$tabletH}) {
+      margin-right: 30px;
+    }
+
+    @media (max-width: #{$tabletV}) {
       border-bottom: 1px solid #dee2e6;
       margin-right: 0;
       padding: 15px;
@@ -63,9 +79,14 @@
     }
 
     &_has-subsection {
-      margin-right: 25px;
+      margin-right: 34px;
 
-      @media (max-width: #{$mobile}) {
+      @media (max-width: #{$tabletH}) {
+        margin-right: 17px;
+      }
+
+      @media (max-width: #{$tabletV}) {
+        position: static;
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
@@ -84,7 +105,7 @@
     color: #214E41;
     text-decoration: none;
 
-    @media (max-width: #{$mobile}) {
+    @media (max-width: #{$tabletV}) {
       font-size: 16px;
     }
 
@@ -95,18 +116,22 @@
   }
 
   &__sublist-arrow {
+    margin-left: 8px;
     display: inline-block;
     width: 12px;
     height: 8px;
-    padding-left: 13px;
     background-image: url('../images/menu-arrow.svg');
     background-repeat: no-repeat;
     background-size: 12px 8px;
     background-position: center center;
-    transition: transform .3s ease-in-out;
+    transition: transform .2s ease-in-out;
 
-    @media (max-width: #{$mobile}) {
-      padding-left: 0;
+    @media (max-width: #{$tabletH}) {
+      margin-left: 5px;
+    }
+
+    @media (max-width: #{$tabletV}) {
+      margin-left: 0;
       transform: rotate(-90deg);
     }
   }
@@ -124,11 +149,64 @@
     list-style: none;
     background-color: #fff;
     z-index: 3;
+
+    @media (max-width: #{$tabletV}) {
+      padding-top: 0;
+      display: block;
+      top: 0;
+      left: 100%;
+      height: 100vh;
+      width: 100%;
+      visibility: hidden;
+      transition: all .15s linear;
+    }
+  }
+
+  &__sublist-back {
+    display: none;
+
+    @media (max-width: #{$tabletV}) {
+      position: relative;
+      display: block;
+      padding: 15px 15px 15px 30px;
+      border-top: 1px solid #dee2e6;
+      font-family: 'Raleway', Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      font-style: normal;
+      line-height: 1.43;
+      color: #214E41;
+    }
+
+    &:before {
+      content: ('');
+      position: absolute;
+      top: 22px;
+      left: 6px;
+      width: 12px;
+      height: 8px;
+      padding-left: 13px;
+      background-image: url('../images/menu-arrow.svg');
+      background-repeat: no-repeat;
+      background-size: 12px 8px;
+      background-position: center center;
+      transform: rotate(90deg);
+    }
   }
 
   &__sublist-item {
     padding: 12px 15px;
-    border-bottom: 1px solid #dee2e6;
+    border: 1px solid #dee2e6;
+    border-bottom: none;
+
+    &:last-of-type {
+      border-bottom: 1px solid #dee2e6;
+    }
+
+    @media (max-width: #{$tabletV}) {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
   }
 
   &__item:hover .menu__sublist {
@@ -137,5 +215,10 @@
 
   &__item:hover .menu__sublist-arrow {
     transform: rotate(-180deg);
+  }
+
+  &_visible {
+    left: 0;
+    visibility: visible;
   }
 }

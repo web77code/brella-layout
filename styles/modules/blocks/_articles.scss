@@ -10,7 +10,7 @@
     flex-wrap: nowrap;
     justify-content: space-between;
 
-    @media (max-width: #{$mobile}) {
+    @media (max-width: #{$mobileL}) {
       flex-direction: column;
       padding: 40px 0 40px;
     }
@@ -19,7 +19,7 @@
   &__item {
     max-width: 355px;
 
-    @media (max-width: #{$mobile}) {
+    @media (max-width: #{$mobileL}) {
       margin: 0 auto;
       margin-bottom: 40px;
 

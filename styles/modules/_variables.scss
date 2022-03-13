@@ -1,11 +1,15 @@
-$mobileBreakPoint: 442px;
-$tabletVerticalBreakPoint: 768px;
-$desktopHorizontalBreakPoint: 1024px;
+$mobileBreakPoint: 374px;
+$modernMobileBreakPoint: 432px;
+$tabletVerticalBreakPoint: 810px;
+$tabletHorizontalBreakPoint: 1080px;
 $desktopBreakPoint: 1280px;
 $laptopBreakPoint: 1440px;
 
-$mobile: $mobileBreakPoint;
+$mobileS: $mobileBreakPoint;
+$mobileL: $modernMobileBreakPoint;
+
 $tabletV: $tabletVerticalBreakPoint;
-$tabletH: $tabletVerticalBreakPoint;
+$tabletH: $tabletHorizontalBreakPoint;
+
 $desktop: $desktopBreakPoint;
 $laptop: $laptopBreakPoint;

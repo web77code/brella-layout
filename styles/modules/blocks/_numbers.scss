@@ -9,7 +9,7 @@
     flex-wrap: nowrap;
     justify-content: space-between;
 
-    @media (max-width: #{$mobile}) {
+    @media (max-width: #{$mobileL}) {
       flex-wrap: wrap;
     }
   }
@@ -21,7 +21,7 @@
       margin-right: 0;
     }
 
-    @media (max-width: #{$mobile}) {
+    @media (max-width: #{$mobileL}) {
       margin-right: 0;
       margin-bottom: 20px;
       width: calc(50% - 16px)

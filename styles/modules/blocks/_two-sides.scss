@@ -3,7 +3,7 @@
   flex-flow: row nowrap;
   justify-content: space-between;
 
-  @media (max-width: #{$mobile}) {
+  @media (max-width: #{$mobileL}) {
     flex-direction: column;
   }
 
@@ -15,7 +15,7 @@
       flex-grow: 1;
       padding: 120px 120px 129px;
 
-      @media (max-width: #{$mobile}) {
+      @media (max-width: #{$mobileL}) {
         padding: 40px 16px;
       }
     }
@@ -25,7 +25,7 @@
       flex-basis: 51%;
       padding: 165px 115px 129px;
 
-      @media (max-width: #{$mobile}) {
+      @media (max-width: #{$mobileL}) {
         padding: 40px 16px;
       }
     }

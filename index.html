@@ -1,74 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/styles.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <title>Cutting Tree Service</title>
-</head>
-<body>
-  <div class="page">
-    <header class="header page__section page__section_size_l">
-
-      <div class="header__container">
-        <div class="logo">
-          <img class="logo__image" src="./images/logo.svg" alt="Brella company">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./vendor/swiper-bundle.min.css" />
+    <title>Cutting Tree Service</title>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header page__section page__section_size_l">
+        <div class="header__container">
+          <div class="logo">
+            <a href="#" class="logo__link">
+              <img class="logo__pic" src="./images/logo.svg" alt="Cutting tree - tree removal estimates"/>
+            </a>
+          </div>
+          <button class="header__menu-button"></button>
         </div>
-        <button class="header__menu-button"></button>
-      </div>
-
-      <div class="menu header__menu">
-        <img class="menu__logo" src="./images/logo.svg" alt="Brella company">
-        <ul class="menu__list">
-          <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-          <li class="menu__item menu__item_has-subsection">
-            <a class="menu__link" href="#">Services</a>
-            <span class="menu__sublist-arrow"></span>
-            <ul class="menu__sublist">
-              <li class="menu__sublist-item"><a class="menu__link" href="#">Link 1</a></li>
-              <li class="menu__sublist-item"><a class="menu__link" href="#">Link 2</a></li>
-              <li class="menu__sublist-item"><a class="menu__link" href="#">Link 3</a></li>
-              <li class="menu__sublist-item"><a class="menu__link" href="#">Link 1</a></li>
-              <li class="menu__sublist-item"><a class="menu__link" href="#">Link 2</a></li>
-              <li class="menu__sublist-item"><a class="menu__link" href="#">Link 3</a></li>
-            </ul>
-          </li>
-          <li class="menu__item"><a class="menu__link" href="#">Costs</a></li>
-          <li class="menu__item menu__item_has-subsection">
-            <a class="menu__link" href="#">Areas</a>
-            <span class="menu__sublist-arrow"></span>
-            <ul class="menu__sublist">
-              <li class="menu__sublist-item"><a class="menu__link" href="#">Link 1</a></li>
-              <li class="menu__sublist-item"><a class="menu__link" href="#">Link 2</a></li>
-              <li class="menu__sublist-item"><a class="menu__link" href="#">Link 3</a></li>
-              <li class="menu__sublist-item"><a class="menu__link" href="#">Link 1</a></li>
-              <li class="menu__sublist-item"><a class="menu__link" href="#">Link 2</a></li>
-              <li class="menu__sublist-item"><a class="menu__link" href="#">Link 3</a></li>
-            </ul>
-          </li>
-          <li class="menu__item"><a class="menu__link" href="#">Law</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">FAQs</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Learning center</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Contacts</a></li>
-        </ul>
-      </div>
-      <div class="header__overlay"></div>
-    </header>
-
-    <main class="main">
-      <section class="hero page__section page__section_size_xl">
-        <img class="hero__image" src="./images/hero.jpg" alt="">
-        <div class="hero__container">
-          <div class="hero__title">Book a Free Estimate!</div>
-          <div class="hero__subtitle">compare Tree Removal Estimates...</div>
-          <form action="" class="form hero__search-form">
-            <input class="form__input" type="text" name="query" placeholder="Enter your Zip code here">
-            <button class="form__button" type="button" aria-label="">Get a quote</button>
-          </form>
+        <div class="menu header__menu">
+          <a href="#" class="menu__logo-link"><img class="menu__logo" src="./images/logo.svg" alt="Cutting tree"/></a>
+          <ul class="menu__list">
+            <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+            <li class="menu__item menu__item_has-subsection">
+              <a class="menu__link" href="#">Services</a><span class="menu__sublist-arrow"></span>
+              <ul class="menu__sublist">
+                <li class="menu__sublist-back">Go back</li>
+                <li class="menu__sublist-item">
+                  <a class="menu__link" href="#">Services Link 1</a>
+                </li>
+                <li class="menu__sublist-item">
+                  <a class="menu__link" href="#">Services Link 2</a>
+                </li>
+                <li class="menu__sublist-item">
+                  <a class="menu__link" href="#">Services Link 3</a>
+                </li>
+                <li class="menu__sublist-item">
+                  <a class="menu__link" href="#">Services Link 4</a>
+                </li>
+                <li class="menu__sublist-item">
+                  <a class="menu__link" href="#">Services Link 5</a>
+                </li>
+                <li class="menu__sublist-item">
+                  <a class="menu__link" href="#">Services Link 6</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item"><a class="menu__link" href="#">Costs</a></li>
+            <li class="menu__item menu__item_has-subsection">
+              <a class="menu__link" href="#">Areas</a><span class="menu__sublist-arrow"></span>
+              <ul class="menu__sublist">
+                <li class="menu__sublist-back">Go back</li>
+                <li class="menu__sublist-item">
+                  <a class="menu__link" href="#">Areas Link 1</a>
+                </li>
+                <li class="menu__sublist-item">
+                  <a class="menu__link" href="#">Areas Link 2</a>
+                </li>
+                <li class="menu__sublist-item">
+                  <a class="menu__link" href="#">Areas Link 3</a>
+                </li>
+                <li class="menu__sublist-item">
+                  <a class="menu__link" href="#">Areas Link 4</a>
+                </li>
+                <li class="menu__sublist-item">
+                  <a class="menu__link" href="#">Areas Link 5</a>
+                </li>
+                <li class="menu__sublist-item">
+                  <a class="menu__link" href="#">Areas Link 6</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item"><a class="menu__link" href="#">Law</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">FAQs</a></li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Learning center</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Contacts</a>
+            </li>
+          </ul>
         </div>
-      </section>
+        <div class="header__overlay"></div>
+      </header>
+
+      <main class="main">
+        <section class="hero page__section page__section_size_xl">
+          <img class="hero__image" src="./images/hero.jpg" alt="">
+          <div class="hero__container">
+            <div class="hero__title">Book a Free Estimate!</div>
+            <div class="hero__subtitle">compare Tree Removal Estimates...</div>
+            <form action="" class="form hero__search-form">
+              <input class="form__input" type="text" name="query" placeholder="Enter your Zip code here">
+              <button class="form__button" type="button" aria-label="">Get a quote</button>
+            </form>
+          </div>
+        </section>
 
       <section class="advantages page__section page__section_size_m">
         <ul class="advantages__list">
@@ -282,9 +310,9 @@
           <button class="action__button">Get in touch</button>
         </div>
       </section> -->
-    </main>
+      </main>
 
-    <!-- <footer class="footer page__section page__section_size_xl">
+      <!-- <footer class="footer page__section page__section_size_xl">
       <div class="footer__information">
         <img src="./images/logo-white.svg" alt="Brella" class="footer__logo">
         <div class="footer__container">
@@ -332,11 +360,10 @@
         </div>
       </div>
     </footer> -->
-  </div>
+    </div>
 
-  <!-- Swiper JS -->
-  <script src="./vendor/scripts/swiper-bundle.min.js"></script>
-  <script src="./scripts/index.js"></script>
-
-</body>
+    <!-- Swiper JS -->
+    <script src="./vendor/scripts/swiper-bundle.min.js"></script>
+    <script src="./scripts/index.js"></script>
+  </body>
 </html>
