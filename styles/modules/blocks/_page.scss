@@ -51,6 +51,16 @@
         padding-left: 16px;
         padding-right: 16px;
       }
+
+      @media (max-width: #{$mobileL}) {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      @media (max-width: #{$mobileS}) {
+        padding-left: 8px;
+        padding-right: 8px;
+      }
     }
 
     &_size_s {
