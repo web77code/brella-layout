@@ -2,12 +2,12 @@
 
   &__list {
     position: relative;
-    top: -90px;
+    top: -80px;
     left: 0;
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
     justify-content: space-between;
-    padding: 52px 40px 12px;
+    padding: 50px 40px 50px;
     margin: 0;
     box-sizing: border-box;
     list-style: none;
@@ -20,99 +20,66 @@
       position: static;
       top: 0;
       margin-top: 30px;
-      padding-left: 20px;
-      padding-right: 20px;
+      padding: 40px 30px 40px;
+    }
+
+    @media (max-width: #{$tabletV}) {
+      flex-wrap: wrap;
+      padding-bottom: 10px;
     }
 
     @media (max-width: #{$mobileL}) {
-      flex-direction: column;
-      padding: 40px 20px;
+      padding: 30px 20px 0 20px;
       margin-top: 50px;
     }
   }
 
   &__item {
-    flex-basis: calc(33% - 35px);
-    display: grid;
-    grid-template-columns: 58px auto;
-    grid-template-rows: repeat(2, auto);
-    margin-right: 35px;
-    margin-bottom: 40px;
-
-    &:nth-of-type(3n) {
-      margin-right: 0;
-
-      @media (max-width: #{$tabletV}) {
-        margin-right: 15px;
-      }
-    }
-
-    &:nth-of-type(2n) {
-      @media (max-width: #{$tabletV}) {
-        margin-right: 0;
-      }
-    }
+    // margin-right: 25px;
+    display: flex;
+    flex-direction: column;
 
     @media (max-width: #{$tabletH}) {
-      flex-basis: calc(33% - 25px);
-      margin-right: 25px;
+      //flex-basis: 33%;
+      //margin-right: 25px;
     }
 
     @media (max-width: #{$tabletV}) {
-      flex-basis: calc(50% - 25px);
-      min-width: 220px;
-      margin-right: 15px;
+      flex-basis: 33%;
+      // min-width: 220px;
+      // margin-right: 15px;
+      margin-bottom: 30px;
     }
 
     @media (max-width: #{$mobileL}) {
-      grid-template-columns: 68px auto;
-      margin-right: 0;
-      margin-bottom: 40px;
-
-      &:last-of-type {
-        margin-bottom: 0;
-      }
+      flex-basis: 50%;
     }
   }
 
   &__image {
-    grid-column: 1 / 2;
-    grid-row: 1 / 3;
-    justify-self: end;
-    padding-right: 10px;
-
-    @media (max-width: #{$mobileL}) {
-      padding-right: 20px;
-    }
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 25px;
   }
 
-  &__title {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
+  &__link {
+    text-align: center;
     padding: 0;
-    margin: 0 0 7px;
+    margin: 0;
     font-family: 'Raleway', Arial, sans-serif;
     font-size: 16px;
     font-weight: 500;
     font-style: normal;
     line-height: 1.5;
     color: #214E41;
+    transition: opacity 300ms ease-in-out;
 
     @media (max-width: #{$mobileL}) {
       margin-bottom: 10px;
     }
-  }
 
-  &__description {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    padding: 0;
-    margin: 0;
-    font-family: 'Raleway', Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.43;
-    color: #214E41;
+    &:hover {
+      opacity: .8;
+    }
   }
 }

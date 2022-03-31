@@ -1,6 +1,10 @@
 .articles {
-  padding-top: 30px;
+  // padding-top: 30px;
   padding-bottom: 120px;
+
+  @media (max-width: #{$tabletH}) {
+    padding-top: 30px;
+  }
 
   @media (max-width: #{$mobileL}) {
     padding-bottom: 40px;
