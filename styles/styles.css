@@ -1405,7 +1405,7 @@
 .footer {
   background-color: #214E41;
   box-sizing: border-box;
-  padding: 100px 120px 50px;
+  padding: 100px 120px 70px;
 }
 .footer__information {
   display: flex;
@@ -1519,12 +1519,9 @@
   background-repeat: no-repeat;
   background-position: center center;
 }
-.footer__policy {
-  padding-top: 73px;
-  border-top: 1px solid #FFFFFF;
-}
 .footer__oficials {
-  margin: 90px 0 0;
+  border-top: 1px solid #FFFFFF;
+  padding-top: 50px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
