@@ -1,7 +1,29 @@
 .footer {
   background-color: #214E41;
-  box-sizing: border-box;
-  padding: 100px 120px 70px;
+
+  &__main-container {
+    box-sizing: border-box;
+    padding: 100px 120px 70px;
+
+    @media (max-width: #{$tabletH}) {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+
+    @media (max-width: #{$tabletV}) {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    @media (max-width: #{$mobileL}) {
+      padding: 50px 16px 50px;
+    }
+
+    @media (max-width: #{$mobileS}) {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  }
 
   &__information {
     display: flex;
@@ -10,16 +32,45 @@
     justify-content: flex-start;
     align-items: flex-start;
     padding-bottom: 70px;
+
+    @media (max-width: #{$mobileL}) {
+      flex-direction: column;
+      padding-bottom: 50px;
+    }
   }
 
   &__logo {
     margin-right: 105px;
+
+    @media (max-width: #{$mobileL}) {
+      margin-right: 0;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__menu-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+
+    @media (max-width: #{$mobileL}) {
+      margin-bottom: 50px;
+    }
   }
 
   &__container {
 
     &:first-of-type {
       margin-right: 115px;
+    }
+
+    @media (max-width: #{$mobileL}) {
+      flex-basis: 50%;
+
+      &:first-of-type {
+        margin-right: 0;
+      }
     }
   }
 
@@ -49,6 +100,7 @@
       margin-bottom: 15px;
     }
   }
+
   &__menu-link {
     font-family: 'Raleway', Arial, sans-serif;
     font-size: 16px;
@@ -61,7 +113,13 @@
 
   &__subscription {
     margin-left: auto;
+    width: 100%;
     max-width: 355px;
+
+    @media (max-width: #{$mobileL}) {
+      margin-left: unset;
+      max-width: 400px;
+    }
   }
 
   &__caption {
@@ -93,7 +151,7 @@
   }
 
   &__email {
-    width: 300px;
+    width: calc(100% - 53px);
     padding: 18px 21px 6px;
     box-sizing: border-box;
     background-color: #214E41;
@@ -134,6 +192,10 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-end;
+
+    @media (max-width: #{$mobileL}) {
+      flex-direction: column;
+    }
   }
 
   &__copyright {
@@ -146,6 +208,10 @@
     color: #FFFFFF;
     letter-spacing: 0.02px;
     padding: 0;
+
+    @media (max-width: #{$mobileL}) {
+      margin-bottom: 20px;
+    }
   }
 
   &__link {
@@ -166,6 +232,16 @@
 
     &:last-of-type {
       padding-right: 0;
+    }
+
+    @media (max-width: #{$mobileL}) {
+      padding-left: 0;
+      padding-right: 0;
+      margin-bottom: 10px;
+
+      &:not(:last-of-type) {
+        border-right: unset;
+      }
     }
   }
 }
