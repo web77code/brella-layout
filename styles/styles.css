@@ -966,6 +966,15 @@
   }
 }
 
+.numbers {
+  padding-top: 120px;
+  box-sizing: border-box;
+}
+@media (max-width: 432px) {
+  .numbers {
+    padding-top: 40px;
+  }
+}
 .numbers__list {
   list-style: none;
   padding: 0;
@@ -1002,6 +1011,11 @@
   color: #F0A446;
   padding: 0;
   margin: 0 0 13px;
+}
+@media (max-width: 432px) {
+  .numbers__title {
+    font-size: 48px;
+  }
 }
 .numbers__desc {
   font-family: "Raleway", Arial, sans-serif;

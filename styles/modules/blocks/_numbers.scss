@@ -1,4 +1,10 @@
 .numbers {
+  padding-top: 120px;
+  box-sizing: border-box;
+
+  @media (max-width: #{$mobileL}) {
+    padding-top: 40px;
+  }
 
   &__list {
     list-style: none;
@@ -37,6 +43,10 @@
     color: #F0A446;
     padding: 0;
     margin: 0 0 13px;
+
+    @media (max-width: #{$mobileL}) {
+      font-size: 48px;
+    }
   }
 
   &__desc {
