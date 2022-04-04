@@ -69,8 +69,8 @@
 }
 @media (max-width: 1080px) {
   .page__section_size_m {
-    padding-left: 63px;
-    padding-right: 63px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
 @media (max-width: 810px) {
@@ -1390,19 +1390,17 @@
 }
 @media (max-width: 1080px) {
   .footer__main-container {
-    padding-left: 32px;
-    padding-right: 32px;
+    padding: 80px 60px 60px;
   }
 }
 @media (max-width: 810px) {
   .footer__main-container {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding: 60px 16px 40px;
   }
 }
 @media (max-width: 432px) {
   .footer__main-container {
-    padding: 50px 16px 50px;
+    padding: 50px 16px 30px;
   }
 }
 @media (max-width: 374px) {
@@ -1419,14 +1417,34 @@
   align-items: flex-start;
   padding-bottom: 70px;
 }
-@media (max-width: 432px) {
+@media (max-width: 1080px) {
   .footer__information {
-    flex-direction: column;
     padding-bottom: 50px;
   }
 }
+@media (max-width: 810px) {
+  .footer__information {
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 432px) {
+  .footer__information {
+    flex-direction: column;
+    padding-bottom: 40px;
+  }
+}
 .footer__logo {
-  margin-right: 105px;
+  margin-right: 100px;
+}
+@media (max-width: 1080px) {
+  .footer__logo {
+    margin-right: 80px;
+  }
+}
+@media (max-width: 810px) {
+  .footer__logo {
+    margin-right: 50px;
+  }
 }
 @media (max-width: 432px) {
   .footer__logo {
@@ -1439,6 +1457,17 @@
   flex-direction: row;
   flex-wrap: nowrap;
   width: 100%;
+  margin-right: 100px;
+}
+@media (max-width: 1080px) {
+  .footer__menu-container {
+    margin-right: 80px;
+  }
+}
+@media (max-width: 810px) {
+  .footer__menu-container {
+    margin-right: 50px;
+  }
 }
 @media (max-width: 432px) {
   .footer__menu-container {
@@ -1446,7 +1475,17 @@
   }
 }
 .footer__container:first-of-type {
-  margin-right: 115px;
+  margin-right: 100px;
+}
+@media (max-width: 1080px) {
+  .footer__container:first-of-type {
+    margin-right: 80px;
+  }
+}
+@media (max-width: 810px) {
+  .footer__container:first-of-type {
+    margin-right: 50px;
+  }
 }
 @media (max-width: 432px) {
   .footer__container {
@@ -1466,6 +1505,11 @@
   color: #FFFFFF;
   text-transform: uppercase;
   margin: 0 0 15px;
+}
+@media (max-width: 432px) {
+  .footer__menu-title {
+    font-size: 16px;
+  }
 }
 .footer__menu {
   list-style: none;
@@ -1508,6 +1552,12 @@
   text-transform: uppercase;
   margin: 0 0 19px;
 }
+@media (max-width: 432px) {
+  .footer__caption {
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
 .footer__text {
   font-family: "Raleway", Arial, sans-serif;
   font-size: 14px;
@@ -1516,11 +1566,21 @@
   line-height: 1.71;
   color: #FFFFFF;
   letter-spacing: 0.02px;
-  margin: 0 0 17px;
+  margin: 0 0 20px;
+}
+@media (max-width: 432px) {
+  .footer__text {
+    font-size: 16px;
+  }
 }
 .footer__form {
   margin: 0 0 30px;
   display: flex;
+}
+@media (max-width: 432px) {
+  .footer__form {
+    margin-bottom: 40px;
+  }
 }
 .footer__email {
   width: calc(100% - 53px);
@@ -1566,8 +1626,13 @@
   padding-top: 50px;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-end;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (max-width: 1080px) {
+  .footer__oficials {
+    padding-top: 20px;
+  }
 }
 @media (max-width: 432px) {
   .footer__oficials {
@@ -1575,7 +1640,8 @@
   }
 }
 .footer__copyright {
-  margin: 0 auto 0 0;
+  margin: 0;
+  padding: 0;
   font-family: "Raleway", Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -1583,7 +1649,6 @@
   line-height: 1.71;
   color: #FFFFFF;
   letter-spacing: 0.02px;
-  padding: 0;
 }
 @media (max-width: 432px) {
   .footer__copyright {
@@ -1599,7 +1664,7 @@
   color: #FFFFFF;
   letter-spacing: 0.02px;
   text-decoration: none;
-  padding: 0 10px;
+  padding: 0 15px;
   box-sizing: border-box;
 }
 .footer__link:not(:last-of-type) {
@@ -1608,14 +1673,12 @@
 .footer__link:last-of-type {
   padding-right: 0;
 }
+.footer__link:first-of-type {
+  padding-left: 0;
+}
 @media (max-width: 432px) {
   .footer__link {
-    padding-left: 0;
-    padding-right: 0;
-    margin-bottom: 10px;
-  }
-  .footer__link:not(:last-of-type) {
-    border-right: unset;
+    font-size: 16px;
   }
 }
 

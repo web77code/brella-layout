@@ -6,17 +6,15 @@
     padding: 100px 120px 70px;
 
     @media (max-width: #{$tabletH}) {
-      padding-left: 32px;
-      padding-right: 32px;
+      padding: 80px 60px 60px;
     }
 
     @media (max-width: #{$tabletV}) {
-      padding-left: 24px;
-      padding-right: 24px;
+      padding: 60px 16px 40px;
     }
 
     @media (max-width: #{$mobileL}) {
-      padding: 50px 16px 50px;
+      padding: 50px 16px 30px;
     }
 
     @media (max-width: #{$mobileS}) {
@@ -33,14 +31,31 @@
     align-items: flex-start;
     padding-bottom: 70px;
 
+    @media (max-width: #{$tabletH}) {
+      padding-bottom: 50px;
+    }
+
+    @media (max-width: #{$tabletV}) {
+      padding-bottom: 40px;
+      // flex-wrap: wrap;
+    }
+
     @media (max-width: #{$mobileL}) {
       flex-direction: column;
-      padding-bottom: 50px;
+      padding-bottom: 40px;
     }
   }
 
   &__logo {
-    margin-right: 105px;
+    margin-right: 100px;
+
+    @media (max-width: #{$tabletH}) {
+      margin-right: 80px;
+    }
+
+    @media (max-width: #{$tabletV}) {
+      margin-right: 50px;
+    }
 
     @media (max-width: #{$mobileL}) {
       margin-right: 0;
@@ -53,6 +68,15 @@
     flex-direction: row;
     flex-wrap: nowrap;
     width: 100%;
+    margin-right: 100px;
+
+    @media (max-width: #{$tabletH}) {
+      margin-right: 80px;
+    }
+
+    @media (max-width: #{$tabletV}) {
+      margin-right: 50px;
+    }
 
     @media (max-width: #{$mobileL}) {
       margin-bottom: 50px;
@@ -62,7 +86,19 @@
   &__container {
 
     &:first-of-type {
-      margin-right: 115px;
+      margin-right: 100px;
+    }
+
+    @media (max-width: #{$tabletH}) {
+      &:first-of-type {
+        margin-right: 80px;
+      }
+    }
+
+    @media (max-width: #{$tabletV}) {
+      &:first-of-type {
+        margin-right: 50px;
+      }
     }
 
     @media (max-width: #{$mobileL}) {
@@ -84,6 +120,10 @@
     color: #FFFFFF;
     text-transform: uppercase;
     margin: 0 0 15px;
+
+    @media (max-width: #{$mobileL}) {
+      font-size: 16px;
+    }
   }
 
   &__menu {
@@ -132,6 +172,11 @@
     letter-spacing: 0.02px;
     text-transform: uppercase;
     margin: 0 0 19px;
+
+    @media (max-width: #{$mobileL}) {
+      font-size: 16px;
+      font-weight: 700;
+    }
   }
 
   &__text {
@@ -142,12 +187,20 @@
     line-height: 1.71;
     color: #FFFFFF;
     letter-spacing: 0.02px;
-    margin: 0 0 17px;
+    margin: 0 0 20px;
+
+    @media (max-width: #{$mobileL}) {
+      font-size: 16px;
+    }
   }
 
   &__form {
     margin: 0 0 30px;
     display: flex;
+
+    @media (max-width: #{$mobileL}) {
+      margin-bottom: 40px;
+    }
   }
 
   &__email {
@@ -190,8 +243,12 @@
     padding-top: 50px;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media (max-width: #{$tabletH}) {
+      padding-top: 20px;
+    }
 
     @media (max-width: #{$mobileL}) {
       flex-direction: column;
@@ -199,7 +256,8 @@
   }
 
   &__copyright {
-    margin: 0 auto 0 0;
+    margin: 0;
+    padding: 0;
     font-family: 'Raleway', Arial, sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -207,7 +265,6 @@
     line-height: 1.71;
     color: #FFFFFF;
     letter-spacing: 0.02px;
-    padding: 0;
 
     @media (max-width: #{$mobileL}) {
       margin-bottom: 20px;
@@ -223,7 +280,7 @@
     color: #FFFFFF;
     letter-spacing: 0.02px;
     text-decoration: none;
-    padding: 0 10px;
+    padding: 0 15px;
     box-sizing: border-box;
 
     &:not(:last-of-type) {
@@ -234,14 +291,12 @@
       padding-right: 0;
     }
 
-    @media (max-width: #{$mobileL}) {
+    &:first-of-type {
       padding-left: 0;
-      padding-right: 0;
-      margin-bottom: 10px;
+    }
 
-      &:not(:last-of-type) {
-        border-right: unset;
-      }
+    @media (max-width: #{$mobileL}) {
+      font-size: 16px;
     }
   }
 }
