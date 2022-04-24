@@ -971,19 +971,19 @@
   padding-top: 100px;
   padding-bottom: 70px;
 }
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .numbers {
     padding-top: 80px;
     padding-bottom: 60px;
   }
 }
-@media (max-width: 809px) {
+@media (max-width: 1023px) {
   .numbers {
     padding-top: 60px;
     padding-bottom: 40px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 809px) {
   .numbers {
     padding-top: 50px;
     padding-bottom: 30px;
@@ -1009,11 +1009,23 @@
 .numbers__item:last-of-type {
   margin-right: 0;
 }
+@media (max-width: 1023px) {
+  .numbers__item {
+    margin-right: 30px;
+  }
+}
 @media (max-width: 809px) {
   .numbers__item {
     margin-right: 0;
     margin-bottom: 20px;
-    width: calc(50% - 32px);
+    width: calc(50% - 16px);
+  }
+}
+@media (max-width: 374px) {
+  .numbers__item {
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 30px;
   }
 }
 .numbers__title {
@@ -1026,14 +1038,29 @@
   padding: 0;
   margin: 0 0 13px;
 }
+@media (max-width: 1279px) {
+  .numbers__title {
+    font-size: 56px;
+  }
+}
+@media (max-width: 1023px) {
+  .numbers__title {
+    font-size: 44px;
+  }
+}
 @media (max-width: 480px) {
   .numbers__title {
-    font-size: 48px;
+    font-size: 32px;
+  }
+}
+@media (max-width: 374px) {
+  .numbers__title {
+    font-size: 44px;
   }
 }
 .numbers__desc {
   font-family: "Raleway", Arial, sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
   font-style: normal;
   line-height: 1.69;
@@ -1041,6 +1068,11 @@
   color: #214E41;
   padding: 0;
   margin: 0;
+}
+@media (max-width: 480px) {
+  .numbers__desc {
+    font-size: 13px;
+  }
 }
 
 .coverage {

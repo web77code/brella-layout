@@ -3,17 +3,17 @@
   padding-top: 100px;
   padding-bottom: 70px;
 
-  @media (max-width: #{$tabletH}) {
+  @media (max-width: #{$desktop}) {
     padding-top: 80px;
     padding-bottom: 60px;
   }
 
-  @media (max-width: #{$tabletV}) {
+  @media (max-width: #{$tabletH}) {
     padding-top: 60px;
     padding-bottom: 40px;
   }
 
-  @media (max-width: #{$mobileL}) {
+  @media (max-width: #{$tabletV}) {
     padding-top: 50px;
     padding-bottom: 30px;
   }
@@ -39,10 +39,20 @@
       margin-right: 0;
     }
 
+    @media (max-width: #{$tabletH}) {
+      margin-right: 30px;
+    }
+
     @media (max-width: #{$tabletV}) {
       margin-right: 0;
       margin-bottom: 20px;
-      width: calc(50% - 32px)
+      width: calc(50% - 16px)
+    }
+
+    @media (max-width: #{$mobileS}) {
+      width: 100%;
+      max-width: 320px;
+      margin-bottom: 30px;
     }
   }
 
@@ -56,14 +66,26 @@
     padding: 0;
     margin: 0 0 13px;
 
+    @media (max-width: #{$desktop}) {
+      font-size: 56px;
+    }
+
+    @media (max-width: #{$tabletH}) {
+      font-size: 44px;
+    }
+
     @media (max-width: #{$mobileL}) {
-      font-size: 48px;
+      font-size: 32px;
+    }
+
+    @media (max-width: #{$mobileS}) {
+      font-size: 44px;
     }
   }
 
   &__desc {
     font-family: 'Raleway', Arial, sans-serif;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 700;
     font-style: normal;
     line-height: 1.69;
@@ -71,5 +93,9 @@
     color: $darkGreenColor;
     padding: 0;
     margin: 0;
+
+    @media (max-width: #{$mobileL}) {
+      font-size: 13px;
+    }
   }
 }
