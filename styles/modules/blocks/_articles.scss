@@ -44,7 +44,6 @@
 
   &__item {
     flex-basis: 33%;
-    max-width: 355px;
     margin-right: 25px;
 
     &:last-of-type {
@@ -53,11 +52,7 @@
 
     @media (max-width: #{$tabletH}) {
       flex-basis: unset;
-      width: 355px;
-    }
 
-    @media (max-width: #{$tabletV}) {
-      width: 302px;
     }
   }
 }

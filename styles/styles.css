@@ -1322,7 +1322,6 @@
 }
 .articles__item {
   flex-basis: 33%;
-  max-width: 355px;
   margin-right: 25px;
 }
 .articles__item:last-of-type {
@@ -1331,12 +1330,6 @@
 @media (max-width: 1023px) {
   .articles__item {
     flex-basis: unset;
-    width: 355px;
-  }
-}
-@media (max-width: 809px) {
-  .articles__item {
-    width: 302px;
   }
 }
 
@@ -1347,6 +1340,17 @@
 
 .article {
   width: 100%;
+  max-width: 355px;
+}
+@media (max-width: 1023px) {
+  .article {
+    width: 355px;
+  }
+}
+@media (max-width: 809px) {
+  .article {
+    width: 302px;
+  }
 }
 .article__image {
   width: 100%;

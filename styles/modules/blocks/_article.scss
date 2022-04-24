@@ -1,5 +1,14 @@
 .article {
   width: 100%;
+  max-width: 355px;
+
+  @media (max-width: #{$tabletH}) {
+    width: 355px;
+  }
+
+  @media (max-width: #{$tabletV}) {
+    width: 302px;
+  }
 
   &__image {
     width: 100%;
