@@ -1,15 +1,21 @@
 $mobileBreakPoint: 374px;
-$modernMobileBreakPoint: 432px;
-$tabletVerticalBreakPoint: 810px;
-$tabletHorizontalBreakPoint: 1080px;
-$desktopBreakPoint: 1280px;
+$modernMobileBreakPoint: 480px;
+$tabletOldBreakPoint: 768px;
+$tabletVerticalBreakPoint: 809px;
+$tabletHorizontalBreakPoint: 1023px;
+$desktopBreakPoint: 1279px;
 $laptopBreakPoint: 1440px;
 
 $mobileS: $mobileBreakPoint;
 $mobileL: $modernMobileBreakPoint;
 
+$tabletS: $tabletOldBreakPoint;
 $tabletV: $tabletVerticalBreakPoint;
 $tabletH: $tabletHorizontalBreakPoint;
 
 $desktop: $desktopBreakPoint;
 $laptop: $laptopBreakPoint;
+
+$darkGreenColor: #214E41;
+$coolYellowColor: #F0A446;
+$basicWhiteColor: #FFFFFF;

@@ -42,17 +42,17 @@
       padding-left: 120px;
       padding-right: 120px;
 
-      @media (max-width: #{$tabletH}) {
+      @media (max-width: #{$desktop}) {
         padding-left: 60px;
         padding-right: 60px;
       }
 
-      @media (max-width: #{$tabletV}) {
-        padding-left: 16px;
-        padding-right: 16px;
+      @media (max-width: #{$tabletH}) {
+        padding-left: 30px;
+        padding-right: 30px;
       }
 
-      @media (max-width: #{$mobileL}) {
+      @media (max-width: #{$tabletV}) {
         padding-left: 16px;
         padding-right: 16px;
       }
