@@ -666,19 +666,37 @@
 .columns {
   display: flex;
   flex-flow: row nowrap;
-  padding-bottom: 120px;
+  padding-bottom: 70px;
   box-sizing: border-box;
   justify-content: space-between;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .columns {
     flex-direction: column;
     padding-bottom: 40px;
   }
 }
 .columns__item {
-  flex-basis: 33.3333333333%;
-  max-width: 355px;
+  flex-basis: 33%;
+  margin-right: 25px;
+}
+.columns__item:last-of-type {
+  margin-right: 0;
+}
+@media (max-width: 768px) {
+  .columns__item:last-of-type {
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 809px) {
+  .columns__item {
+    margin-right: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .columns__item {
+    padding-bottom: 30px;
+  }
 }
 .columns__link-list {
   list-style: none;
