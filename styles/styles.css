@@ -41,17 +41,11 @@
 }
 @media (max-width: 1023px) {
   .page__section_size_l {
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 @media (max-width: 809px) {
-  .page__section_size_l {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-}
-@media (max-width: 480px) {
   .page__section_size_l {
     padding-left: 16px;
     padding-right: 16px;
@@ -90,10 +84,6 @@
     padding-left: 8px;
     padding-right: 8px;
   }
-}
-.page__section_size_s {
-  padding-left: 180px;
-  padding-right: 180px;
 }
 
 .header {
@@ -1283,16 +1273,22 @@
 }
 
 .articles {
-  padding-bottom: 120px;
+  padding-bottom: 70px;
+}
+@media (max-width: 1279px) {
+  .articles {
+    padding-bottom: 60px;
+  }
 }
 @media (max-width: 1023px) {
   .articles {
     padding-top: 30px;
+    padding-bottom: 40px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 809px) {
   .articles {
-    padding-bottom: 40px;
+    padding-bottom: 30px;
   }
 }
 .articles__list {
@@ -1306,40 +1302,54 @@
   flex-wrap: nowrap;
   justify-content: space-between;
 }
-@media (max-width: 809px) {
+@media (max-width: 1279px) {
   .articles__list {
-    overflow-y: hidden;
-    padding: 0 0 20px;
-    justify-content: unset;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 1023px) {
   .articles__list {
-    padding: 0 0 20px;
+    padding-left: 0;
+    padding-right: 0;
+    flex-direction: unset;
+    flex-wrap: unset;
+    justify-content: unset;
+    display: inline-grid;
+    grid-auto-flow: column;
+    padding-bottom: 20px;
   }
 }
 .articles__item {
+  flex-basis: 33%;
   max-width: 355px;
+  margin-right: 25px;
+}
+.articles__item:last-of-type {
+  margin-right: 0;
+}
+@media (max-width: 1023px) {
+  .articles__item {
+    flex-basis: unset;
+    width: 355px;
+  }
 }
 @media (max-width: 809px) {
   .articles__item {
-    margin-right: 25px;
-  }
-  .articles__item:last-of-type {
-    margin-right: 0;
+    width: 302px;
   }
 }
-@media (max-width: 480px) {
-  .articles__item {
-    margin-right: 25px;
-  }
+
+.scroll-row {
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 .article {
   width: 100%;
 }
 .article__image {
-  width: 355px;
+  width: 100%;
   height: 237px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1356,6 +1366,12 @@
   letter-spacing: 0.05px;
   text-transform: uppercase;
   margin: 0 0 15px;
+}
+@media (max-width: 809px) {
+  .article__type {
+    font-size: 12px;
+    font-weight: 700;
+  }
 }
 .article__link {
   font-family: "Roboto", Arial, sans-serif;

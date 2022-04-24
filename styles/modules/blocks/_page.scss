@@ -18,16 +18,11 @@
       padding-right: 45px;
 
       @media (max-width: #{$tabletH}) {
-        padding-left: 32px;
-        padding-right: 32px;
+        padding-left: 30px;
+        padding-right: 30px;
       }
 
       @media (max-width: #{$tabletV}) {
-        padding-left: 24px;
-        padding-right: 24px;
-      }
-
-      @media (max-width: #{$mobileL}) {
         padding-left: 16px;
         padding-right: 16px;
       }
@@ -61,11 +56,6 @@
         padding-left: 8px;
         padding-right: 8px;
       }
-    }
-
-    &_size_s {
-      padding-left: 180px;
-      padding-right: 180px;
     }
   }
 }
