@@ -5,8 +5,7 @@
     min-width: 320px;
     max-width: 1440px;
     box-sizing: border-box;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 
     &_size_xl {
       padding-left: 0;
@@ -17,9 +16,14 @@
       padding-left: 45px;
       padding-right: 45px;
 
-      @media (max-width: #{$tabletH}) {
+      @media (max-width: #{$desktop}) {
         padding-left: 30px;
         padding-right: 30px;
+      }
+
+      @media (max-width: #{$tabletH}) {
+        padding-left: 24px;
+        padding-right: 24px;
       }
 
       @media (max-width: #{$tabletV}) {

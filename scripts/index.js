@@ -1,5 +1,5 @@
 const windowInnerWidth = window.innerWidth;
-const isMobile = windowInnerWidth < 811 ? true : false;
+const isMobile = windowInnerWidth < 1024 ? true : false;
 
 const mobileMenuButton = document.querySelector('.header__menu-button'); // Кнопка бургер на мобильной версии
 const headerMenuElement = document.querySelector('.header__menu');

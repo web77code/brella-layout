@@ -1,6 +1,6 @@
 .menu {
 
-  @media (max-width: #{$tabletV}) {
+  @media (max-width: #{$tabletH}) {
     position: fixed;
     top: 0;
     left: -100%;
@@ -23,14 +23,14 @@
   &__logo-link {
     display: none;
 
-    @media (max-width: #{$tabletV}) {
+    @media (max-width: #{$tabletH}) {
       display: block;
     }
   }
 
   &__logo {
     padding: 25px 15px 25px;
-    max-width: 160px;
+    width: 160px;
 
     @media (max-width: #{$mobileL}) {
       padding-top: 9px;
@@ -45,9 +45,8 @@
     padding: 0;
     list-style: none;
 
-    @media (max-width: #{$tabletV}) {
+    @media (max-width: #{$tabletH}) {
       flex-direction: column;
-      position: relative;
     }
   }
 
@@ -59,19 +58,20 @@
     justify-content: flex-start;
     align-items: center;
     box-sizing: border-box;
+    text-align: center;
 
     &:last-of-type {
       margin-right: 0;
     }
 
-    @media (max-width: #{$tabletH}) {
+    @media (max-width: #{$desktop}) {
       margin-right: 30px;
     }
 
-    @media (max-width: #{$tabletV}) {
+    @media (max-width: #{$tabletH}) {
       border-bottom: 1px solid #dee2e6;
       margin-right: 0;
-      padding: 15px;
+      padding: 15px 16px;
 
       &:first-of-type {
         border-top: 1px solid #dee2e6;
@@ -81,11 +81,11 @@
     &_has-subsection {
       margin-right: 34px;
 
-      @media (max-width: #{$tabletH}) {
-        margin-right: 17px;
+      @media (max-width: #{$desktop}) {
+        margin-right: 18px;
       }
 
-      @media (max-width: #{$tabletV}) {
+      @media (max-width: #{$tabletH}) {
         position: static;
         display: flex;
         flex-flow: row nowrap;
@@ -105,7 +105,7 @@
     color: #214E41;
     text-decoration: none;
 
-    @media (max-width: #{$tabletV}) {
+    @media (max-width: #{$tabletH}) {
       font-size: 16px;
     }
 
@@ -126,11 +126,11 @@
     background-position: center center;
     transition: transform .2s ease-in-out;
 
-    @media (max-width: #{$tabletH}) {
+    @media (max-width: #{$desktop}) {
       margin-left: 5px;
     }
 
-    @media (max-width: #{$tabletV}) {
+    @media (max-width: #{$tabletH}) {
       margin-left: 0;
       transform: rotate(-90deg);
     }
@@ -147,13 +147,13 @@
     padding: 10px 0 0;
     margin: 0;
     list-style: none;
-    background-color: #fff;
+    background-color: #ffffff;
     z-index: 3;
 
-    @media (max-width: #{$tabletV}) {
+    @media (max-width: #{$tabletH}) {
       padding-top: 0;
       display: block;
-      top: 0;
+      top: 60px;
       left: 100%;
       height: 100vh;
       width: 100%;
@@ -164,12 +164,14 @@
 
   &__sublist-back {
     display: none;
+    text-align: left;
 
-    @media (max-width: #{$tabletV}) {
+    @media (max-width: #{$tabletH}) {
       position: relative;
       display: block;
-      padding: 15px 15px 15px 30px;
+      padding: 15px 16px 15px 31px;
       border-top: 1px solid #dee2e6;
+      border-bottom: 1px solid #dee2e6;
       font-family: 'Raleway', Arial, sans-serif;
       font-size: 16px;
       font-weight: 700;
@@ -185,7 +187,7 @@
       left: 6px;
       width: 12px;
       height: 8px;
-      padding-left: 13px;
+      padding-left: 14px;
       background-image: url('../images/menu-arrow.svg');
       background-repeat: no-repeat;
       background-size: 12px 8px;
@@ -198,14 +200,16 @@
     padding: 12px 15px;
     border: 1px solid #dee2e6;
     border-bottom: none;
+    text-align: left;
 
     &:last-of-type {
       border-bottom: 1px solid #dee2e6;
     }
 
-    @media (max-width: #{$tabletV}) {
-      padding-top: 15px;
-      padding-bottom: 15px;
+    @media (max-width: #{$tabletH}) {
+      padding: 15px 16px;
+      border: none;
+      border-bottom: 1px solid #dee2e6;
     }
   }
 
