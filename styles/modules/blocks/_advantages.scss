@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 50px 40px 50px;
+    padding: 50px 40px;
     margin: 0;
     box-sizing: border-box;
     list-style: none;
@@ -17,49 +17,38 @@
     background-color: #FFFFFF;
 
     @media (max-width: #{$tabletH}) {
+      flex-wrap: wrap;
       position: static;
       top: 0;
       margin-top: 30px;
-      padding: 40px 30px 40px;
-    }
-
-    @media (max-width: #{$tabletV}) {
-      flex-wrap: wrap;
-      padding-bottom: 10px;
+      padding: 40px 30px 10px;
     }
 
     @media (max-width: #{$mobileL}) {
-      padding: 30px 20px 0 20px;
-      margin-top: 50px;
+      padding-right: 20px;
     }
   }
 
   &__item {
-    // margin-right: 25px;
     display: flex;
     flex-direction: column;
 
     @media (max-width: #{$tabletH}) {
-      //flex-basis: 33%;
-      //margin-right: 25px;
-    }
-
-    @media (max-width: #{$tabletV}) {
       flex-basis: 33%;
-      // min-width: 220px;
-      // margin-right: 15px;
       margin-bottom: 30px;
     }
 
     @media (max-width: #{$mobileL}) {
       flex-basis: 50%;
+      padding-right: 10px;
+      box-sizing: border-box;
     }
   }
 
   &__image {
     height: 50px;
     object-fit: contain;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 
   &__link {
@@ -73,10 +62,6 @@
     line-height: 1.5;
     color: #214E41;
     transition: opacity 300ms ease-in-out;
-
-    @media (max-width: #{$mobileL}) {
-      margin-bottom: 10px;
-    }
 
     &:hover {
       opacity: .8;
