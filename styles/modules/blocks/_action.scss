@@ -62,7 +62,7 @@
     }
   }
 
-  &__question {
+  &__title {
     font-family: 'Roboto', Arial, sans-serif;
     font-size: 36px;
     font-weight: 700;
@@ -70,37 +70,27 @@
     line-height: 1.28;
     color: $darkGreenColor;
     padding: 0;
-    margin: 0 0 46px;
+    margin: 0;
     max-width: 423px;
+
+    &:first-of-type {
+      margin-bottom: 46px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 60px;
+    }
 
     @media (max-width: #{$tabletH}) {
       font-size: 26px;
-      margin-bottom: 0;
-    }
 
-    @media (max-width: #{$tabletV}) {
-      font-size: 24px;
-    }
+      &:first-of-type {
+        margin-bottom: 0;
+      }
 
-    @media (max-width: #{$mobileS}) {
-      font-size: 22px;
-    }
-  }
-
-  &__suggest {
-    font-family: 'Roboto', Arial, sans-serif;
-    font-size: 36px;
-    font-weight: 700;
-    font-style: normal;
-    line-height: 1.28;
-    color: $darkGreenColor;
-    padding: 0;
-    margin: 0 0 60px;
-    max-width: 423px;
-
-    @media (max-width: #{$tabletH}) {
-      font-size: 26px;
-      margin-bottom: 0;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
     }
 
     @media (max-width: #{$tabletV}) {
