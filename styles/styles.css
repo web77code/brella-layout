@@ -1603,6 +1603,9 @@
   color: #FFFFFF;
   text-decoration: none;
 }
+.footer__menu-link:hover {
+  text-decoration: underline;
+}
 .footer__subscription {
   margin-left: auto;
   width: 100%;
@@ -1753,6 +1756,9 @@
 }
 .footer__link:first-of-type {
   padding-left: 0;
+}
+.footer__link:hover {
+  text-decoration: underline;
 }
 @media (max-width: 480px) {
   .footer__link {

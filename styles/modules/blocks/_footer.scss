@@ -145,6 +145,10 @@
     line-height: 1.69;
     color: $basicWhiteColor;
     text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   &__subscription {
@@ -300,6 +304,10 @@
 
     &:first-of-type {
       padding-left: 0;
+    }
+
+    &:hover {
+      text-decoration: underline;
     }
 
     @media (max-width: #{$mobileL}) {
