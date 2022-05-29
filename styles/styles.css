@@ -1529,11 +1529,6 @@
 }
 @media (max-width: 1023px) {
   .action {
-    max-height: 400px;
-  }
-}
-@media (max-width: 1023px) {
-  .action {
     height: 350px;
   }
 }
