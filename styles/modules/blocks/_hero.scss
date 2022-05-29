@@ -7,32 +7,61 @@
     max-height: 720px;
     object-fit: cover;
 
-    @media (max-width: #{$tabletH}) {
+    @media (max-width: #{$desktop}) {
       min-height: 400px;
       max-height: 535px;
     }
 
-    @media (max-width: #{$tabletV}) {
+    @media (max-width: #{$tabletH}) {
       min-height: 330px;
       max-height: 400px;
     }
 
-    @media (max-width: #{$mobileL}) {
+    @media (max-width: #{$tabletS}) {
       min-height: unset;
       height: 220px;
     }
   }
 
+  &__wide-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    @media (max-width: #{$tabletS}) {
+      position: static;
+      top: unset;
+      left: unset;
+      margin-top: 30px;
+    }
+  }
+
   &__container {
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__action-container {
     box-sizing: border-box;
     padding: 40px;
     width: 100%;
     max-width: 516px;
-    position: absolute;
-    top: 161px;
-    left: 120px;
     display: flex;
     flex-direction: column;
+    position: relative;
+
+    @media (max-width: #{$tabletS}) {
+      max-width: unset;
+    }
+
+    @media (max-width: #{$mobileL}) {
+      padding: 20px;
+    }
 
     &::before {
       content: '';
@@ -48,29 +77,10 @@
       box-shadow: 1px 1px 4px rgba(232, 230, 230, 0.6);
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 
-      @media (max-width: #{$mobileL}) {
+      @media (max-width: #{$tabletS}) {
+        opacity: 1;
         background-color: #eae3da;
       }
-    }
-
-    @media (max-width: #{$tabletH}) {
-      top: 110px;
-      left: 60px;
-    }
-
-    @media (max-width: #{$tabletV}) {
-      width: calc(100% - 32px);
-      max-width: 400px;
-      padding: 25px;
-      top: 80px;
-      left: 16px;
-    }
-
-    @media (max-width: #{$mobileL}) {
-      position: relative;
-      top: 20px;
-      padding-left: 20px;
-      padding-right: 20px;
     }
   }
 
@@ -84,7 +94,7 @@
     margin-bottom: 40px;
     z-index: 2;
 
-    @media (max-width: #{$tabletV}) {
+    @media (max-width: #{$tabletH}) {
       font-size: 28px;
       margin-bottom: 20px;
     }
@@ -104,7 +114,7 @@
     margin-bottom: 16px;
     z-index: 2;
 
-    @media (max-width: #{$tabletV}) {
+    @media (max-width: #{$tabletH}) {
       font-size: 18px;
       margin-bottom: 20px;
     }
