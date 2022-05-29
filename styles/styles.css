@@ -1010,6 +1010,12 @@
     flex-wrap: wrap;
   }
 }
+@media (max-width: 767px) {
+  .numbers__list {
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+}
 .numbers__item {
   margin-right: 50px;
 }
@@ -1076,9 +1082,19 @@
   padding: 0;
   margin: 0;
 }
+@media (max-width: 810px) {
+  .numbers__desc {
+    max-width: 300px;
+  }
+}
 @media (max-width: 480px) {
   .numbers__desc {
     font-size: 13px;
+  }
+}
+@media (max-width: 374px) {
+  .numbers__desc {
+    max-width: 280px;
   }
 }
 
