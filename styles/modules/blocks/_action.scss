@@ -5,6 +5,7 @@
   font-size: 0;
   max-height: 577px;
   overflow: hidden;
+  margin-top: 100px;
 
   @media (max-width: #{$desktop}) {
     max-height: 470px;

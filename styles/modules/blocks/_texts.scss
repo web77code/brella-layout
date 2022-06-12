@@ -1,0 +1,16 @@
+.texts {
+  &__paragraph {
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: 0.02px;
+    color: #757575;
+    margin: 0 0 20px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
