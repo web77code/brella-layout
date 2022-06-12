@@ -10,20 +10,14 @@
 @import "./modules/blocks/_hero.scss";
 @import "./modules/blocks/_form.scss";
 @import "./modules/blocks/_advantages.scss";
+@import "./modules/blocks/_articles.scss";
+@import "./modules/blocks/scroll-row";
+@import "./modules/blocks/_article.scss";
 @import "./modules/blocks/_columns.scss";
+@import "./modules/blocks/_two-sides.scss";
 @import "./modules/blocks/_numbers.scss";
 @import "./modules/blocks/_texts.scss";
-
- @import "./modules/blocks/_welcome.scss";
- @import "./modules/blocks/_two-sides.scss";
- @import "./modules/blocks/_information.scss";
-
- @import "./modules/blocks/_coverage.scss";
- @import "./modules/blocks/_clients.scss";
- @import "./modules/blocks/_sweeper.scss";
- @import "./modules/blocks/_articles.scss";
- @import "./modules/blocks/scroll-row";
- @import "./modules/blocks/_article.scss";
- @import "./modules/blocks/_action.scss";
- @import "./modules/blocks/_footer.scss";
- @import "./modules/blocks/_socials.scss";
+@import "./modules/blocks/_clients.scss";
+@import "./modules/blocks/_action.scss";
+@import "./modules/blocks/_footer.scss";
+@import "./modules/blocks/_socials.scss";
