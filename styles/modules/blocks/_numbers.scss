@@ -1,21 +1,21 @@
 .numbers {
   box-sizing: border-box;
   padding-top: 100px;
-  padding-bottom: 70px;
+  padding-bottom: 100px;
 
   @media (max-width: #{$desktop}) {
     padding-top: 80px;
-    padding-bottom: 60px;
+    padding-bottom: 80px;
   }
 
   @media (max-width: #{$tabletH}) {
     padding-top: 60px;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
   }
 
   @media (max-width: #{$tabletV}) {
-    padding-top: 50px;
-    padding-bottom: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   &__list {
@@ -30,19 +30,10 @@
     @media (max-width: #{$tabletV}) {
       flex-wrap: wrap;
     }
-
-    @media (max-width: #{$tabletS}) {
-      padding: 0 20px;
-      box-sizing: border-box;
-    }
   }
 
   &__item {
     margin-right: 50px;
-
-    &:last-of-type {
-      margin-right: 0;
-    }
 
     @media (max-width: #{$tabletH}) {
       margin-right: 30px;
@@ -56,8 +47,15 @@
 
     @media (max-width: #{$mobileS}) {
       width: 100%;
-      max-width: 320px;
       margin-bottom: 30px;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+
+      @media (max-width: #{$tabletV}) {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -85,12 +83,13 @@
 
     @media (max-width: #{$mobileS}) {
       font-size: 44px;
+      text-align: center;
     }
   }
 
   &__desc {
     font-family: 'Raleway', Arial, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     font-style: normal;
     line-height: 1.69;
@@ -103,12 +102,9 @@
       max-width: 300px;
     }
 
-    @media (max-width: #{$mobileL}) {
-      font-size: 13px;
-    }
-
     @media (max-width: #{$mobileS}) {
-      max-width: 280px;
+      max-width: calc(100% - 10px);
+      text-align: center;
     }
   }
 }

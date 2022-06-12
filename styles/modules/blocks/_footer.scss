@@ -8,7 +8,7 @@
 
     @media (max-width: #{$desktop}) {
       padding-top: 80px;
-      padding-bottom: 60px;
+      padding-bottom: 50px;
     }
 
     @media (max-width: #{$tabletH}) {
@@ -30,8 +30,12 @@
     align-items: flex-start;
     padding-bottom: 70px;
 
-    @media (max-width: #{$tabletH}) {
+    @media (max-width: #{$desktop}) {
       padding-bottom: 50px;
+    }
+
+    @media (max-width: #{$tabletH}) {
+      padding-bottom: 40px;
     }
 
     @media (max-width: #{$tabletV}) {
@@ -53,7 +57,7 @@
 
     @media (max-width: #{$tabletV}) {
       margin-right: unset;
-      margin-bottom: 50px;
+      margin-bottom: 40px;
     }
   }
 
@@ -75,7 +79,7 @@
 
     @media (max-width: #{$tabletV}) {
       margin-right: unset;
-      margin-bottom: 50px;
+      margin-bottom: 40px;
     }
   }
 
@@ -119,6 +123,7 @@
 
     @media (max-width: #{$tabletV}) {
       font-size: 16px;
+      margin-bottom: 20px;
     }
   }
 
@@ -176,7 +181,7 @@
     color: $basicWhiteColor;
     letter-spacing: 0.02px;
     text-transform: uppercase;
-    margin: 0 0 19px;
+    margin: 0 0 20px;
 
     @media (max-width: #{$tabletV}) {
       font-size: 16px;
@@ -202,10 +207,6 @@
   &__form {
     margin: 0 0 30px;
     display: flex;
-
-    @media (max-width: #{$mobileL}) {
-      margin-bottom: 40px;
-    }
   }
 
   &__email {
@@ -258,7 +259,11 @@
     justify-content: space-between;
 
     @media (max-width: #{$tabletH}) {
-      padding-top: 20px;
+      padding-top: 40px;
+    }
+
+    @media (max-width: #{$tabletV}) {
+      padding-top: 30px;
     }
 
     @media (max-width: #{$mobileL}) {
@@ -278,6 +283,7 @@
     letter-spacing: 0.02px;
 
     @media (max-width: #{$mobileL}) {
+      font-size: 16px;
       margin-bottom: 20px;
     }
   }

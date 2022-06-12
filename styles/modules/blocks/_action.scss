@@ -9,14 +9,17 @@
 
   @media (max-width: #{$desktop}) {
     max-height: 470px;
+    margin-top: 80px;
   }
 
   @media (max-width: #{$tabletH}) {
     height: 350px;
+    margin-top: 60px;
   }
 
   @media (max-width: #{$tabletV}) {
-    height: 250px;
+    height: 280px;
+    margin-top: 40px;
   }
 
   &__image {
@@ -50,7 +53,7 @@
 
     @media (max-width: #{$tabletV}) {
       flex-basis: 100%;
-      padding: 30px 16px;
+      padding: 50px 16px 40px;
     }
 
     @media (max-width: #{$mobileS}) {

@@ -10,6 +10,10 @@
     width: 302px;
   }
 
+  @media (max-width: #{$mobileS}) {
+    width: 280px;
+  }
+
   &__image {
     width: 100%;
     object-fit: contain;
@@ -26,11 +30,6 @@
     letter-spacing: 0.05px;
     text-transform: uppercase;
     margin: 0 0 15px;
-
-    @media (max-width: #{$tabletV}) {
-      font-size: 12px;
-      font-weight: 700;
-    }
   }
 
   &__link {
@@ -43,6 +42,10 @@
     margin: 0;
     text-decoration: none;
     transition: opacity 300ms ease-in-out;
+
+    @media (max-width: #{$mobileL}) {
+      font-size: 18px;
+    }
 
     &:hover {
       opacity: .9;

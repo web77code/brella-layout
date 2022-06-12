@@ -3,7 +3,7 @@
   flex-flow: row nowrap;
   justify-content: space-between;
 
-  @media (max-width: #{$mobileL}) {
+  @media (max-width: #{$tabletS}) {
     flex-direction: column;
   }
 
@@ -13,20 +13,54 @@
     &:first-of-type {
       background-color: #E3EEED;
       flex-grow: 1;
-      padding: 120px 120px 129px;
+      padding: 120px;
 
-      @media (max-width: #{$mobileL}) {
-        padding: 40px 16px;
+      @media (max-width: #{$desktop}) {
+        padding: 60px;
+      }
+
+      @media (max-width: #{$tabletH}) {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
+      @media (max-width: #{$tabletV}) {
+        padding-left: 16px;
+      }
+
+      @media (max-width: #{$tabletS}) {
+        background-color: #214E41;
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+
+      @media (max-width: #{$mobileS}) {
+        padding-left: 8px;
+        padding-right: 8px;
       }
     }
 
     &:last-of-type {
       background-color: #214E41;
       flex-basis: 51%;
-      padding: 165px 115px 129px;
+      padding: 145px 120px 120px;
 
-      @media (max-width: #{$mobileL}) {
-        padding: 40px 16px;
+      @media (max-width: #{$desktop}) {
+        padding: 85px 60px 60px;
+      }
+
+      @media (max-width: #{$tabletH}) {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
+      @media (max-width: #{$tabletV}) {
+        padding-right: 16px;
+      }
+
+
+      @media (max-width: #{$tabletS}) {
+        display: none;
       }
     }
   }
@@ -40,12 +74,21 @@
     color: #214E41;
     letter-spacing: 0.05px;
     text-transform: uppercase;
-    margin: 0 0 29px;
+    margin: 0 0 30px;
+
+    @media (max-width: #{$tabletH}) {
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: #{$tabletS}) {
+      color: #FFFFFF;
+    }
   }
 
   &__list {
     list-style: none;
     padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
   }
@@ -69,6 +112,18 @@
     text-decoration: none;
     transition: text-shadow 200ms linear;
 
+    @media (max-width: #{$tabletH}) {
+      font-size: 24px;
+    }
+
+    @media (max-width: #{$tabletS}) {
+      color: #FFFFFF;
+    }
+
+    @media (max-width: #{$mobileL}) {
+      font-size: 22px;
+    }
+
     &:hover {
       color: #214E41;
       text-shadow: 0.6px 0 0 #214E41;
@@ -84,6 +139,10 @@
         background-size: 30px 23px;
         background-repeat: no-repeat;
       }
+
+      @media (max-width: #{$tabletS}) {
+        color: #FFFFFF;
+      }
     }
   }
 
@@ -95,5 +154,9 @@
     line-height: 1.7;
     color: #FFFFFF;
     letter-spacing: 0.02px;
+
+    @media (max-width: #{$tabletH}) {
+      font-size: 16px;
+    }
   }
 }
