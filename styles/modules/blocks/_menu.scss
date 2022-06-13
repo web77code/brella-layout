@@ -11,7 +11,7 @@
     min-width: 274px;
     overflow-y: auto;
     overflow-x: hidden;
-    background-color: #ffffff;
+    background-color: $basicWhiteColor;
     z-index: 11;
     transition: all .3s ease-in-out;
   }
@@ -69,12 +69,12 @@
     }
 
     @media (max-width: #{$tabletH}) {
-      border-bottom: 1px solid #dee2e6;
+      border-bottom: 1px solid $lightGrayColor;
       margin-right: 0;
       padding: 15px 16px;
 
       &:first-of-type {
-        border-top: 1px solid #dee2e6;
+        border-top: 1px solid $lightGrayColor;
       }
     }
 
@@ -102,7 +102,7 @@
     font-weight: 700;
     font-style: normal;
     line-height: 1.43;
-    color: #214E41;
+    color: $darkGreenColor;
     text-decoration: none;
 
     @media (max-width: #{$tabletH}) {
@@ -147,7 +147,7 @@
     padding: 10px 0 0;
     margin: 0;
     list-style: none;
-    background-color: #ffffff;
+    background-color: $basicWhiteColor;
     z-index: 3;
 
     @media (max-width: #{$tabletH}) {
@@ -170,14 +170,14 @@
       position: relative;
       display: block;
       padding: 15px 16px 15px 31px;
-      border-top: 1px solid #dee2e6;
-      border-bottom: 1px solid #dee2e6;
+      border-top: 1px solid $lightGrayColor;
+      border-bottom: 1px solid $lightGrayColor;
       font-family: 'Raleway', Arial, sans-serif;
       font-size: 16px;
       font-weight: 700;
       font-style: normal;
       line-height: 1.43;
-      color: #214E41;
+      color: $darkGreenColor;
     }
 
     &:before {
@@ -198,18 +198,18 @@
 
   &__sublist-item {
     padding: 12px 15px;
-    border: 1px solid #dee2e6;
+    border: 1px solid $lightGrayColor;
     border-bottom: none;
     text-align: left;
 
     &:last-of-type {
-      border-bottom: 1px solid #dee2e6;
+      border-bottom: 1px solid $lightGrayColor;
     }
 
     @media (max-width: #{$tabletH}) {
       padding: 15px 16px;
       border: none;
-      border-bottom: 1px solid #dee2e6;
+      border-bottom: 1px solid $lightGrayColor;
     }
   }
 

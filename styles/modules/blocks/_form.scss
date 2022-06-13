@@ -20,7 +20,7 @@
     font-weight: 700;
     font-style: normal;
     line-height: 1.43;
-    color: #636262;
+    color: $basicGrayColor;
 
     &::placeholder {
       opacity: 1;
@@ -42,21 +42,21 @@
     min-width: 80px;
     height: 60px;
     border-radius: 0px 6px 6px 0px;
-    background-color: #43806C;
+    background-color: $basicGreenColor;
     border: none;
     font-family: 'Raleway', Arial, sans-serif;
     font-size: 14px;
     font-weight: 700;
     font-style: normal;
     line-height: 1.54;
-    color: #FFFFFF;
+    color: $basicWhiteColor;
     text-transform: uppercase;
     padding: 0 20px;
-    transition: background-color 300ms ease-in-out;
+    transition: opacity 300ms ease-in-out;
 
     &:hover {
       cursor: pointer;
-      background-color: #326957;
+      opacity: .9;
     }
 
     @media (max-width: #{$mobileL}) {
