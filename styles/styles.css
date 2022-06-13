@@ -1143,6 +1143,23 @@
   }
 }
 
+.texts {
+  display: grid;
+}
+.texts_display_row {
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.texts_display_column {
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+@media (max-width: 767px) {
+  .texts_display_column {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
 .texts__paragraph {
   font-family: "Raleway", Arial, sans-serif;
   font-size: 18px;
@@ -1151,10 +1168,7 @@
   line-height: 1.67;
   letter-spacing: 0.02px;
   color: #616161;
-  margin: 0 0 20px;
-}
-.texts__paragraph:last-of-type {
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .clients {
