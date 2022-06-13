@@ -1,0 +1,75 @@
+.advantages {
+
+  &__list {
+    position: relative;
+    top: -80px;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 40px;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    box-shadow: 1px 1px 4px rgba(232, 230, 230, 0.6);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 6px;
+    background-color: #FFFFFF;
+
+    @media (max-width: #{$tabletH}) {
+      flex-wrap: wrap;
+      position: static;
+      top: 0;
+      margin-top: 30px;
+      padding: 35px 30px 10px;
+    }
+
+    @media (max-width: #{$tabletS}) {
+      margin-top: 40px;
+    }
+
+    @media (max-width: #{$mobileL}) {
+      padding-right: 20px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: #{$tabletH}) {
+      flex-basis: 33%;
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: #{$mobileL}) {
+      flex-basis: 50%;
+      padding-right: 10px;
+      box-sizing: border-box;
+    }
+  }
+
+  &__image {
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.5;
+    color: #214E41;
+    transition: opacity 300ms ease-in-out;
+
+    &:hover {
+      opacity: .8;
+      cursor: pointer;
+    }
+  }
+}

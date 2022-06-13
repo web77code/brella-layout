@@ -1,0 +1,24 @@
+@import url(../vendor/normalize.css);
+
+@import "./modules/_fonts.scss";
+@import "./modules/_variables.scss";
+
+@import "./modules/blocks/_page.scss";
+@import "./modules/blocks/_header.scss";
+@import "./modules/blocks/_logo.scss";
+@import "./modules/blocks/_menu.scss";
+@import "./modules/blocks/_hero.scss";
+@import "./modules/blocks/_form.scss";
+@import "./modules/blocks/_advantages.scss";
+@import "./modules/blocks/_articles.scss";
+@import "./modules/blocks/scroll-row";
+@import "./modules/blocks/_article.scss";
+@import "./modules/blocks/_columns.scss";
+@import "./modules/blocks/_two-sides.scss";
+@import "./modules/blocks/_numbers.scss";
+@import "./modules/blocks/_texts.scss";
+@import "./modules/blocks/_clients.scss";
+@import "./modules/blocks/_swiper.scss";
+@import "./modules/blocks/_action.scss";
+@import "./modules/blocks/_footer.scss";
+@import "./modules/blocks/_socials.scss";

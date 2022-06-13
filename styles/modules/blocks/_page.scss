@@ -1,0 +1,60 @@
+.page {
+  width: 100%;
+
+  &__section {
+    min-width: 320px;
+    max-width: 1440px;
+    box-sizing: border-box;
+    margin: 0 auto;
+
+    &_size_xl {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &_size_l {
+      padding-left: 45px;
+      padding-right: 45px;
+
+      @media (max-width: #{$desktop}) {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
+      @media (max-width: #{$tabletV}) {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      @media (max-width: #{$mobileS}) {
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+    }
+
+    &_size_m {
+      padding-left: 120px;
+      padding-right: 120px;
+
+      @media (max-width: #{$desktop}) {
+        padding-left: 60px;
+        padding-right: 60px;
+      }
+
+      @media (max-width: #{$tabletH}) {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
+      @media (max-width: #{$tabletV}) {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      @media (max-width: #{$mobileS}) {
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+    }
+  }
+}

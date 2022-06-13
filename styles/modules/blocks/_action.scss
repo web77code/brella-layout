@@ -1,0 +1,125 @@
+.action {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-size: 0;
+  max-height: 577px;
+  overflow: hidden;
+  margin-top: 100px;
+
+  @media (max-width: #{$desktop}) {
+    max-height: 470px;
+    margin-top: 80px;
+  }
+
+  @media (max-width: #{$tabletH}) {
+    height: 350px;
+    margin-top: 60px;
+  }
+
+  @media (max-width: #{$tabletV}) {
+    height: 280px;
+    margin-top: 40px;
+  }
+
+  &__image {
+    width: 50%;
+    max-height: 577px;
+    object-fit: cover;
+    overflow: hidden;
+
+    @media (max-width: #{$tabletV}) {
+      display: none;
+    }
+  }
+
+  &__prompt {
+    flex-basis: 50%;
+    background-color: #E3EEED;
+    box-sizing: border-box;
+    padding: 144px 120px 96px 120px;
+
+    @media (max-width: #{$desktop}) {
+      padding: 80px 60px 60px 80px;
+    }
+
+    @media (max-width: #{$tabletH}) {
+      padding: 50px 30px 50px 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    @media (max-width: #{$tabletV}) {
+      flex-basis: 100%;
+      padding: 50px 16px 40px;
+    }
+
+    @media (max-width: #{$mobileS}) {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  }
+
+  &__title {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.28;
+    color: $darkGreenColor;
+    padding: 0;
+    margin: 0;
+    max-width: 423px;
+
+    &:first-of-type {
+      margin-bottom: 46px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 60px;
+    }
+
+    @media (max-width: #{$tabletH}) {
+      font-size: 26px;
+
+      &:first-of-type {
+        margin-bottom: 0;
+      }
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    @media (max-width: #{$tabletV}) {
+      font-size: 24px;
+    }
+
+    @media (max-width: #{$mobileS}) {
+      font-size: 22px;
+    }
+  }
+
+  &__button {
+    background-color: $lightGreenColor;
+    box-sizing: border-box;
+    padding: 13px 24px;
+    border-radius: 6px;
+    border: 1px solid $lightGreenColor;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.62;
+    letter-spacing: 0.02px;
+    color: #FFFFFF;
+    transition: opacity .3s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      opacity: .9;
+    }
+  }
+}
