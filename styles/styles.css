@@ -84,6 +84,10 @@
     padding-right: 8px;
   }
 }
+.page__section_type_inner {
+  display: flex;
+  gap: 20px;
+}
 
 .header {
   height: 90px;
@@ -1255,6 +1259,16 @@
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+}
+
+.content {
+  flex-basis: 70%;
+  background-color: #e3eeed;
+}
+
+.sidebar {
+  flex-basis: calc(30% - 20px);
+  background-color: #dee2e6;
 }
 
 .action {

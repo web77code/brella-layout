@@ -56,5 +56,10 @@
         padding-right: 8px;
       }
     }
+
+    &_type_inner {
+      display: flex;
+      gap: 20px;
+    }
   }
 }

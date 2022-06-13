@@ -4,9 +4,11 @@
 @import "./modules/_variables.scss";
 
 @import "./modules/blocks/_page.scss";
+
 @import "./modules/blocks/_header.scss";
 @import "./modules/blocks/_logo.scss";
 @import "./modules/blocks/_menu.scss";
+
 @import "./modules/blocks/_hero.scss";
 @import "./modules/blocks/_form.scss";
 @import "./modules/blocks/_advantages.scss";
@@ -19,6 +21,10 @@
 @import "./modules/blocks/_texts.scss";
 @import "./modules/blocks/_clients.scss";
 @import "./modules/blocks/_swiper.scss";
+
+@import "./modules/blocks/_content.scss";
+@import "./modules/blocks/_sidebar.scss";
+
 @import "./modules/blocks/_action.scss";
 @import "./modules/blocks/_footer.scss";
 @import "./modules/blocks/_socials.scss";
