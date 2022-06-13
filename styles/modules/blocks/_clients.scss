@@ -1,11 +1,11 @@
 .clients {
-  padding-top: 120px;
-  padding-bottom: 125px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   box-sizing: border-box;
   position: relative;
 
   &__title {
-    margin: 0 0 115px;
+    margin: 0 0 80px;
     padding: 0;
     font-family: 'Roboto', Arial, sans-serif;
     font-size: 36px;
@@ -33,7 +33,7 @@
 
   &__button-next {
     position: absolute;
-    top: 302px;
+    top: 245px;
     right: 123px;
     width: 23px;
     height: 16px;
@@ -50,7 +50,7 @@
 
   &__button-prev {
     position: absolute;
-    top: 302px;
+    top: 245px;
     left: 123px;
     width: 23px;
     height: 16px;

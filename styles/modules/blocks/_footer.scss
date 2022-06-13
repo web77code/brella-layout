@@ -1,7 +1,26 @@
 .footer {
-  background-color: #214E41;
-  box-sizing: border-box;
-  padding: 100px 120px 50px;
+  width: 100%;
+  background-color: $darkGreenColor;
+
+  &__main-container {
+    padding-top: 100px;
+    padding-bottom: 70px;
+
+    @media (max-width: #{$desktop}) {
+      padding-top: 80px;
+      padding-bottom: 50px;
+    }
+
+    @media (max-width: #{$tabletH}) {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+
+    @media (max-width: #{$tabletV}) {
+      padding-top: 50px;
+      padding-bottom: 30px;
+    }
+  }
 
   &__information {
     display: flex;
@@ -10,16 +29,84 @@
     justify-content: flex-start;
     align-items: flex-start;
     padding-bottom: 70px;
+
+    @media (max-width: #{$desktop}) {
+      padding-bottom: 50px;
+    }
+
+    @media (max-width: #{$tabletH}) {
+      padding-bottom: 40px;
+    }
+
+    @media (max-width: #{$tabletV}) {
+      flex-direction: column;
+    }
   }
 
   &__logo {
-    margin-right: 105px;
+    max-width: 160px;
+    margin-right: 100px;
+
+    @media (max-width: #{$desktop}) {
+      margin-right: 80px;
+    }
+
+    @media (max-width: #{$tabletH}) {
+      margin-right: 50px;
+    }
+
+    @media (max-width: #{$tabletV}) {
+      margin-right: unset;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__menu-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 485px;
+    margin-right: 100px;
+
+    @media (max-width: #{$desktop}) {
+      margin-right: 80px;
+    }
+
+    @media (max-width: #{$tabletH}) {
+      margin-right: 50px;
+    }
+
+    @media (max-width: #{$tabletV}) {
+      margin-right: unset;
+      margin-bottom: 40px;
+    }
   }
 
   &__container {
 
     &:first-of-type {
-      margin-right: 115px;
+      margin-right: 100px;
+    }
+
+    @media (max-width: #{$desktop}) {
+      &:first-of-type {
+        margin-right: 80px;
+      }
+    }
+
+    @media (max-width: #{$tabletH}) {
+      &:first-of-type {
+        margin-right: 50px;
+      }
+    }
+
+    @media (max-width: #{$tabletV}) {
+      flex-basis: 50%;
+
+      &:first-of-type {
+        margin-right: 0;
+      }
     }
   }
 
@@ -30,10 +117,16 @@
     font-style: normal;
     line-height: 1.85;
     letter-spacing: 0.02px;
-    color: #FFFFFF;
+    color: $basicWhiteColor;
     text-transform: uppercase;
     margin: 0 0 15px;
+
+    @media (max-width: #{$tabletV}) {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
   }
+
   &__menu {
     list-style: none;
     padding: 0;
@@ -41,25 +134,42 @@
     display: flex;
     flex-direction: column;
   }
+
   &__item {
 
     &:not(:last-of-type) {
       margin-bottom: 15px;
     }
   }
+
   &__menu-link {
     font-family: 'Raleway', Arial, sans-serif;
     font-size: 16px;
     font-weight: 400;
     font-style: normal;
     line-height: 1.69;
-    color: #FFFFFF;
+    color: $basicWhiteColor;
     text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   &__subscription {
     margin-left: auto;
+    width: 100%;
     max-width: 355px;
+    min-width: 320px;
+
+    @media (max-width: #{$tabletH}) {
+      min-width: 280px;
+    }
+
+    @media (max-width: #{$tabletV}) {
+      margin-left: unset;
+      max-width: 450px;
+    }
   }
 
   &__caption {
@@ -68,10 +178,15 @@
     font-weight: 400;
     font-style: normal;
     line-height: 1.85;
-    color: #FFFFFF;
+    color: $basicWhiteColor;
     letter-spacing: 0.02px;
     text-transform: uppercase;
-    margin: 0 0 19px;
+    margin: 0 0 20px;
+
+    @media (max-width: #{$tabletV}) {
+      font-size: 16px;
+      font-weight: 700;
+    }
   }
 
   &__text {
@@ -80,9 +195,13 @@
     font-weight: 400;
     font-style: normal;
     line-height: 1.71;
-    color: #FFFFFF;
+    color: $basicWhiteColor;
     letter-spacing: 0.02px;
-    margin: 0 0 17px;
+    margin: 0 0 20px;
+
+    @media (max-width: #{$tabletV}) {
+      font-size: 16px;
+    }
   }
 
   &__form {
@@ -91,26 +210,32 @@
   }
 
   &__email {
-    width: 300px;
-    padding: 18px 21px 6px;
+    width: calc(100% - 53px);
+    padding: 12px 21px 12px;
     box-sizing: border-box;
-    background-color: #214E41;
-    border: 1px solid #FFFFFF;
+    background-color: $darkGreenColor;
+    border: 1px solid $basicWhiteColor;
     font-family: 'Raleway', Arial, sans-serif;
     font-size: 14px;
     font-weight: 400;
     font-style: normal;
     line-height: 1.71;
-    color: #FFFFFF;
+    color: $basicWhiteColor;
     letter-spacing: 0.02px;
 
     &::placeholder {
-      color: #FFFFFF;
+      color: $basicWhiteColor;
       opacity: 1;
     }
 
     &:focus {
       outline: none;
+    }
+
+    @media (max-width: #{$tabletV}) {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 16px;
     }
   }
 
@@ -125,29 +250,42 @@
     background-position: center center;
   }
 
-  &__policy {
-    padding-top: 73px;
-    border-top: 1px solid #FFFFFF;
-  }
-
   &__oficials {
-    margin: 90px 0 0;
+    border-top: 1px solid $basicWhiteColor;
+    padding-top: 50px;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media (max-width: #{$tabletH}) {
+      padding-top: 40px;
+    }
+
+    @media (max-width: #{$tabletV}) {
+      padding-top: 30px;
+    }
+
+    @media (max-width: #{$mobileL}) {
+      flex-direction: column;
+    }
   }
 
   &__copyright {
-    margin: 0 auto 0 0;
+    margin: 0;
+    padding: 0;
     font-family: 'Raleway', Arial, sans-serif;
     font-size: 14px;
     font-weight: 400;
     font-style: normal;
     line-height: 1.71;
-    color: #FFFFFF;
+    color: $basicWhiteColor;
     letter-spacing: 0.02px;
-    padding: 0;
+
+    @media (max-width: #{$mobileL}) {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
   }
 
   &__link {
@@ -156,18 +294,30 @@
     font-weight: 400;
     font-style: normal;
     line-height: 1.71;
-    color: #FFFFFF;
+    color: $basicWhiteColor;
     letter-spacing: 0.02px;
-    text-decoration: none;
-    padding: 0 10px;
+    text-decoration: underline;
+    padding: 0 15px;
     box-sizing: border-box;
 
+    @media (max-width: #{$mobileL}) {
+      font-size: 16px;
+    }
+
     &:not(:last-of-type) {
-      border-right: 1px solid #FFFFFF;
+      border-right: 1px solid $basicWhiteColor;
     }
 
     &:last-of-type {
       padding-right: 0;
+    }
+
+    &:first-of-type {
+      padding-left: 0;
+    }
+
+    &:hover {
+      text-decoration: none;
     }
   }
 }

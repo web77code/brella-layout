@@ -1,25 +1,50 @@
 .articles {
-  // padding-top: 120px;
-  // padding-bottom: 120px;
-  // box-sizing: border-box;
+  padding-bottom: 70px;
+  box-sizing: border-box;
 
+  @media (max-width: #{$desktop}) {
+    padding-bottom: 50px;
+  }
+
+  @media (max-width: #{$tabletH}) {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  @media (max-width: #{$tabletV}) {
+    padding-top: 40px;
+  }
 
   &__list {
     list-style: none;
-    padding: 120px 74px 120px 131px;
+    padding-left: 75px;
+    padding-right: 75px;
     box-sizing: border-box;
     margin: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    border-top: 1px solid rgba(199, 199, 199, 0.37);
-  }
+    gap: 25px;
+    justify-content: space-between;
 
-  &__item {
-    max-width: 355px;
+    @media (max-width: #{$desktop}) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
 
-    &:not(:last-of-type) {
-      margin-right: 40px;
+    @media (max-width: #{$tabletH}) {
+      padding-left: 0;
+      padding-right: 0;
+      flex-direction: unset;
+      flex-wrap: unset;
+      justify-content: unset;
+      display: inline-grid;
+      grid-auto-flow: column;
+      padding-bottom: 20px;
+    }
+
+    @media (max-width: #{$mobileS}) {
+      gap: 10px;
     }
   }
 }
