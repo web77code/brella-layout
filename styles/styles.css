@@ -1662,9 +1662,14 @@
   line-height: 1.71;
   color: #FFFFFF;
   letter-spacing: 0.02px;
-  text-decoration: none;
+  text-decoration: underline;
   padding: 0 15px;
   box-sizing: border-box;
+}
+@media (max-width: 480px) {
+  .footer__link {
+    font-size: 16px;
+  }
 }
 .footer__link:not(:last-of-type) {
   border-right: 1px solid #FFFFFF;
@@ -1676,12 +1681,7 @@
   padding-left: 0;
 }
 .footer__link:hover {
-  text-decoration: underline;
-}
-@media (max-width: 480px) {
-  .footer__link {
-    font-size: 16px;
-  }
+  text-decoration: none;
 }
 
 .socials__list {

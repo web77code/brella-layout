@@ -296,9 +296,13 @@
     line-height: 1.71;
     color: $basicWhiteColor;
     letter-spacing: 0.02px;
-    text-decoration: none;
+    text-decoration: underline;
     padding: 0 15px;
     box-sizing: border-box;
+
+    @media (max-width: #{$mobileL}) {
+      font-size: 16px;
+    }
 
     &:not(:last-of-type) {
       border-right: 1px solid $basicWhiteColor;
@@ -313,11 +317,7 @@
     }
 
     &:hover {
-      text-decoration: underline;
-    }
-
-    @media (max-width: #{$mobileL}) {
-      font-size: 16px;
+      text-decoration: none;
     }
   }
 }
