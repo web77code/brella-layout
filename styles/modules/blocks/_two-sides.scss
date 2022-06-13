@@ -11,7 +11,7 @@
     box-sizing: border-box;
 
     &:first-of-type {
-      background-color: #E3EEED;
+      background-color: $lightGreenColor;
       flex-grow: 1;
       padding: 120px;
 
@@ -29,7 +29,7 @@
       }
 
       @media (max-width: #{$tabletS}) {
-        background-color: #214E41;
+        background-color: $darkGreenColor;
         padding-top: 40px;
         padding-bottom: 40px;
       }
@@ -41,7 +41,7 @@
     }
 
     &:last-of-type {
-      background-color: #214E41;
+      background-color: $darkGreenColor;
       flex-basis: 51%;
       padding: 145px 120px 120px;
 
@@ -71,7 +71,7 @@
     font-weight: 400;
     font-style: normal;
     line-height: 1.54;
-    color: #214E41;
+    color: $darkGreenColor;
     letter-spacing: 0.05px;
     text-transform: uppercase;
     margin: 0 0 30px;
@@ -81,7 +81,7 @@
     }
 
     @media (max-width: #{$tabletS}) {
-      color: #FFFFFF;
+      color: $basicWhiteColor;
     }
   }
 
@@ -108,7 +108,7 @@
     font-weight: 400;
     font-style: normal;
     line-height: 1.3;
-    color: #43806C;
+    color: $basicGreenColor;
     text-decoration: none;
     transition: text-shadow 200ms linear;
 
@@ -117,7 +117,7 @@
     }
 
     @media (max-width: #{$tabletS}) {
-      color: #FFFFFF;
+      color: $basicWhiteColor;
     }
 
     @media (max-width: #{$mobileL}) {
@@ -125,8 +125,8 @@
     }
 
     &:hover {
-      color: #214E41;
-      text-shadow: 0.6px 0 0 #214E41;
+      color: $darkGreenColor;
+      text-shadow: 0.6px 0 0 $darkGreenColor;
 
       &::after {
         content: '';
@@ -141,7 +141,7 @@
       }
 
       @media (max-width: #{$tabletS}) {
-        color: #FFFFFF;
+        color: $basicWhiteColor;
       }
     }
   }
@@ -152,7 +152,7 @@
     font-weight: 400;
     font-style: normal;
     line-height: 1.7;
-    color: #FFFFFF;
+    color: $basicWhiteColor;
     letter-spacing: 0.02px;
 
     @media (max-width: #{$tabletH}) {

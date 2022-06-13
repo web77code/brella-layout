@@ -35,7 +35,7 @@
 
   &__prompt {
     flex-basis: 50%;
-    background-color: #E3EEED;
+    background-color: $lightGreenColor;
     box-sizing: border-box;
     padding: 144px 120px 96px 120px;
 
@@ -103,18 +103,18 @@
   }
 
   &__button {
-    background-color: $lightGreenColor;
+    background-color: $basicGreenColor;
     box-sizing: border-box;
     padding: 13px 24px;
     border-radius: 6px;
-    border: 1px solid $lightGreenColor;
+    border: none;
     font-family: 'Raleway', Arial, sans-serif;
     font-size: 14px;
     font-weight: 700;
     font-style: normal;
     line-height: 1.62;
     letter-spacing: 0.02px;
-    color: #FFFFFF;
+    color: $basicWhiteColor;
     transition: opacity .3s ease-in-out;
 
     &:hover {
