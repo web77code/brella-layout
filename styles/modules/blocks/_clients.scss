@@ -4,6 +4,21 @@
   box-sizing: border-box;
   position: relative;
 
+  @media (max-width: #{$desktop}) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  @media (max-width: #{$tabletH}) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media (max-width: #{$tabletV}) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
   &__title {
     margin: 0 0 80px;
     padding: 0;
@@ -14,10 +29,49 @@
     line-height: 1.28;
     color: $darkGreenColor;
     text-align: center;
+
+    @media (max-width: #{$desktop}) {
+      font-size: 30px;
+    }
+
+    @media (max-width: #{$tabletH}) {
+      font-size: 28px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__slider-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    &_block {
+      &_button {
+        &:first-of-type {
+          order: 1;
+          margin-right: 10px;
+        }
+        &:nth-of-type(2) {
+          order: 3;
+          margin-left: 10px;
+        }
+      }
+      &_swiper {
+        order: 2;
+      }
+    }
   }
 
   &__list {
     margin: 0;
+  }
+
+  &__item {
+    width: 150px;
   }
 
   &__link {
@@ -32,9 +86,6 @@
   }
 
   &__button-next {
-    position: absolute;
-    top: 245px;
-    right: 123px;
     width: 23px;
     height: 16px;
     background-image: url(../images/arrow-right.svg);
@@ -49,9 +100,6 @@
   }
 
   &__button-prev {
-    position: absolute;
-    top: 245px;
-    left: 123px;
     width: 23px;
     height: 16px;
     background-image: url(../images/arrow-right.svg);

@@ -7,14 +7,34 @@ const headerOverlayElement = document.querySelector('.header__overlay');
 const menuItemsWithSubsections = Array.from(document.querySelectorAll('.menu__item_has-subsection'));
 
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 5,
-  spaceBetween: 80,
   slidesPerGroup: 1,
   loop: true,
   loopFillGroupWithBlank: true,
   navigation: {
     nextEl: ".clients__button-next",
     prevEl: ".clients__button-prev",
+  },
+  breakpoints: {
+    1400: {
+      slidesPerView: 5,
+      spaceBetween: 80,
+    },
+    1280: {
+      slidesPerView: 5,
+      spaceBetween: 60,
+    },
+    810: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 60,
+    },
   },
 });
 
