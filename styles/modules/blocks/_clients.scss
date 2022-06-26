@@ -33,6 +33,11 @@
     @media (max-width: #{$desktop}) {
       font-size: 30px;
     }
+
+    @media (max-width: #{$tabletH}) {
+      font-size: 28px;
+      margin-bottom: 40px;
+    }
   }
 
   &__slider-container {

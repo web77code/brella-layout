@@ -1222,6 +1222,12 @@
     font-size: 30px;
   }
 }
+@media (max-width: 1023px) {
+  .clients__title {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+}
 .clients__slider-container {
   display: flex;
   flex-flow: row nowrap;
