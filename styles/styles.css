@@ -91,6 +91,8 @@
 
 .header {
   height: 90px;
+  border-bottom: 1px solid #dee2e6;
+  box-shadow: 0px 2px 8px 0px rgba(34, 60, 80, 0.1);
 }
 @media (max-width: 1023px) {
   .header {
@@ -166,8 +168,7 @@
 .logo {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 @media (max-width: 1023px) {
@@ -401,8 +402,7 @@
 .hero__image {
   width: 100%;
   max-height: 720px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 @media (max-width: 1279px) {
   .hero__image {
@@ -554,12 +554,6 @@
   line-height: 1.43;
   color: #616161;
 }
-.form__input::-moz-placeholder {
-  opacity: 1;
-}
-.form__input:-ms-input-placeholder {
-  opacity: 1;
-}
 .form__input::placeholder {
   opacity: 1;
 }
@@ -665,8 +659,7 @@
 }
 .advantages__image {
   height: 50px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   margin-bottom: 20px;
 }
 .advantages__link {
@@ -770,8 +763,7 @@
 }
 .article__image {
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   margin: 0 0 20px;
 }
 .article__type {
@@ -1302,8 +1294,7 @@
 .clients__logo {
   width: 146px;
   height: 60px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   overflow: hidden;
 }
 .clients__button-next {
@@ -1342,8 +1333,17 @@
   text-align: center;
   background: #ffffff;
   /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
 }
 
@@ -1387,8 +1387,7 @@
 .action__image {
   width: 50%;
   max-height: 577px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   overflow: hidden;
 }
 @media (max-width: 810px) {
@@ -1705,14 +1704,6 @@
   line-height: 1.71;
   color: #ffffff;
   letter-spacing: 0.02px;
-}
-.footer__email::-moz-placeholder {
-  color: #ffffff;
-  opacity: 1;
-}
-.footer__email:-ms-input-placeholder {
-  color: #ffffff;
-  opacity: 1;
 }
 .footer__email::placeholder {
   color: #ffffff;

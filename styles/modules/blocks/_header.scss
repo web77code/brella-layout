@@ -1,5 +1,7 @@
 .header {
   height: 90px;
+  border-bottom: 1px solid $lightGrayColor;
+  box-shadow: 0px 2px 8px 0px rgba(34, 60, 80, 0.1);
 
   @media (max-width: #{$tabletH}) {
     height: 80px;
