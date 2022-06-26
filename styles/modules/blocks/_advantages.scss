@@ -1,5 +1,13 @@
 .advantages {
 
+  @media (max-width: #{$tabletH}) {
+    padding-bottom: 60px;
+  }
+
+  @media (max-width: #{$tabletV}) {
+    padding-bottom: 40px;
+  }
+
   &__list {
     position: relative;
     top: -80px;
