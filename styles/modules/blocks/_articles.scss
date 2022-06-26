@@ -1,8 +1,10 @@
 .articles {
+  padding-top: 100px;
   padding-bottom: 70px;
   box-sizing: border-box;
 
   @media (max-width: #{$desktop}) {
+    padding-top: 80px;
     padding-bottom: 50px;
   }
 
